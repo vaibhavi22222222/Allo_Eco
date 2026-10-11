@@ -1,0 +1,4518 @@
+{
+  "schema_version": "vibhu-optimizer-1",
+  "dataset_version_id": "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67",
+  "data_hash": "cf0639083b9fc5708bbd",
+  "config_version": "6ede1e28b20cf57d1e7a",
+  "scenario_hash": "d437d253872cf9ce1d82",
+  "planning_window": {
+    "start": "2026-01-01",
+    "end": "2026-04-23"
+  },
+  "solver": {
+    "status": "optimal",
+    "termination_reason": "optimality_proven",
+    "has_feasible_solution": true,
+    "optimality_proven": true,
+    "solve_seconds": 3.238584660000015,
+    "best_bound": null,
+    "relative_gap": null,
+    "stage": "strict",
+    "stage_objective": 1.0412242566082337,
+    "pulp_status": "Optimal",
+    "pulp_solution_status": "Optimal Solution Found",
+    "log_summary": [
+      "Result - Optimal solution found",
+      "Objective value:                1.04122426",
+      "Enumerated nodes:               0",
+      "Time (Wallclock seconds):       1.87"
+    ],
+    "strict_solver_status": "optimal",
+    "objective_value": 1.041224256608234
+  },
+  "answer_type": "allocation",
+  "alternative": false,
+  "original_request_met": true,
+  "allocation": [
+    {
+      "order_id": "ORD-0001",
+      "plant": "C",
+      "qty": 35,
+      "dispatch": "2026-01-19",
+      "arrival": "2026-01-23",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1674.232,
+      "carbon_kg": 3.794,
+      "cost_breakdown": {
+        "production": 770.0,
+        "energy": 215.6,
+        "transport": 595.0,
+        "duty": 93.632
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0001",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0002",
+      "plant": "B",
+      "qty": 100,
+      "dispatch": "2026-01-12",
+      "arrival": "2026-01-16",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4676.254,
+      "carbon_kg": 27.26,
+      "cost_breakdown": {
+        "production": 1950.0,
+        "energy": 732.0,
+        "transport": 1600.0,
+        "duty": 394.25399999999996
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0002",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0003",
+      "plant": "C",
+      "qty": 74,
+      "dispatch": "2026-01-22",
+      "arrival": "2026-01-28",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4319.39776,
+      "carbon_kg": 8.021600000000001,
+      "cost_breakdown": {
+        "production": 1628.0,
+        "energy": 455.84000000000003,
+        "transport": 1998.0,
+        "duty": 237.55776000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0003",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0004",
+      "plant": "B",
+      "qty": 34,
+      "dispatch": "2026-01-15",
+      "arrival": "2026-01-18",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1356.22532,
+      "carbon_kg": 9.2684,
+      "cost_breakdown": {
+        "production": 663.0,
+        "energy": 248.88,
+        "transport": 272.0,
+        "duty": 172.34532
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0004",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0005",
+      "plant": "C",
+      "qty": 48,
+      "dispatch": "2026-01-06",
+      "arrival": "2026-01-10",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2283.2486400000003,
+      "carbon_kg": 5.203200000000001,
+      "cost_breakdown": {
+        "production": 1056.0,
+        "energy": 295.68,
+        "transport": 816.0,
+        "duty": 115.56864000000002
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0005",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0006",
+      "plant": "C",
+      "qty": 85,
+      "dispatch": "2026-01-28",
+      "arrival": "2026-02-02",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4849.879000000001,
+      "carbon_kg": 9.214,
+      "cost_breakdown": {
+        "production": 1980.5,
+        "energy": 523.6,
+        "transport": 1870.0,
+        "duty": 475.779
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0006",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0007",
+      "plant": "C",
+      "qty": 109,
+      "dispatch": "2026-01-23",
+      "arrival": "2026-01-29",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6825.268260000001,
+      "carbon_kg": 11.8156,
+      "cost_breakdown": {
+        "production": 2539.7000000000003,
+        "energy": 671.44,
+        "transport": 2943.0,
+        "duty": 671.1282600000001
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0007",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0008",
+      "plant": "C",
+      "qty": 107,
+      "dispatch": "2026-01-27",
+      "arrival": "2026-01-31",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4755.11424,
+      "carbon_kg": 11.5988,
+      "cost_breakdown": {
+        "production": 2354.0,
+        "energy": 659.12,
+        "transport": 1284.0,
+        "duty": 457.99424
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0008",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0009",
+      "plant": "B",
+      "qty": 84,
+      "dispatch": "2026-01-07",
+      "arrival": "2026-01-11",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3544.7428800000002,
+      "carbon_kg": 22.898400000000002,
+      "cost_breakdown": {
+        "production": 1638.0,
+        "energy": 614.88,
+        "transport": 1008.0,
+        "duty": 283.86288
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0009",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0010",
+      "plant": "C",
+      "qty": 121,
+      "dispatch": "2026-01-14",
+      "arrival": "2026-01-18",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5668.608,
+      "carbon_kg": 13.116399999999999,
+      "cost_breakdown": {
+        "production": 2662.0,
+        "energy": 745.36,
+        "transport": 1452.0,
+        "duty": 809.248
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0010",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0011",
+      "plant": "B",
+      "qty": 82,
+      "dispatch": "2026-01-19",
+      "arrival": "2026-01-23",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3414.1602,
+      "carbon_kg": 22.353199999999998,
+      "cost_breakdown": {
+        "production": 1599.0,
+        "energy": 600.2399999999999,
+        "transport": 984.0,
+        "duty": 230.92019999999997
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0011",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0012",
+      "plant": "C",
+      "qty": 45,
+      "dispatch": "2026-01-22",
+      "arrival": "2026-01-27",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2425.7376,
+      "carbon_kg": 4.878,
+      "cost_breakdown": {
+        "production": 990.0,
+        "energy": 277.2,
+        "transport": 990.0,
+        "duty": 168.53760000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0012",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0013",
+      "plant": "C",
+      "qty": 114,
+      "dispatch": "2026-01-21",
+      "arrival": "2026-01-27",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6819.30216,
+      "carbon_kg": 12.357600000000001,
+      "cost_breakdown": {
+        "production": 2656.2000000000003,
+        "energy": 702.24,
+        "transport": 3078.0,
+        "duty": 382.8621600000001
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0013",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0014",
+      "plant": "C",
+      "qty": 71,
+      "dispatch": "2026-01-30",
+      "arrival": "2026-02-03",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3301.3338599999997,
+      "carbon_kg": 7.696400000000001,
+      "cost_breakdown": {
+        "production": 1654.3,
+        "energy": 437.36,
+        "transport": 852.0,
+        "duty": 357.67386
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0014",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0015",
+      "plant": "C",
+      "qty": 87,
+      "dispatch": "2026-01-19",
+      "arrival": "2026-01-23",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4138.38816,
+      "carbon_kg": 9.430800000000001,
+      "cost_breakdown": {
+        "production": 1914.0,
+        "energy": 535.9200000000001,
+        "transport": 1479.0,
+        "duty": 209.46816
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0015",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0016",
+      "plant": "B",
+      "qty": 76,
+      "dispatch": "2026-01-17",
+      "arrival": "2026-01-21",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3682.3671999999997,
+      "carbon_kg": 20.717599999999997,
+      "cost_breakdown": {
+        "production": 1482.0,
+        "energy": 556.3199999999999,
+        "transport": 1216.0,
+        "duty": 428.0472
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0016",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0017",
+      "plant": "C",
+      "qty": 35,
+      "dispatch": "2026-01-15",
+      "arrival": "2026-01-21",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2136.5904,
+      "carbon_kg": 3.794,
+      "cost_breakdown": {
+        "production": 770.0,
+        "energy": 215.6,
+        "transport": 945.0,
+        "duty": 205.9904
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0017",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0018",
+      "plant": "B",
+      "qty": 127,
+      "dispatch": "2026-01-15",
+      "arrival": "2026-01-18",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4994.37152,
+      "carbon_kg": 34.6202,
+      "cost_breakdown": {
+        "production": 2476.5,
+        "energy": 929.64,
+        "transport": 1016.0,
+        "duty": 572.23152
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0018",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0019",
+      "plant": "C",
+      "qty": 123,
+      "dispatch": "2026-01-29",
+      "arrival": "2026-02-02",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5949.53952,
+      "carbon_kg": 13.333200000000001,
+      "cost_breakdown": {
+        "production": 2706.0,
+        "energy": 757.6800000000001,
+        "transport": 2091.0,
+        "duty": 394.85952000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0019",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0020",
+      "plant": "C",
+      "qty": 56,
+      "dispatch": "2026-01-27",
+      "arrival": "2026-01-31",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2713.5780000000004,
+      "carbon_kg": 6.0704,
+      "cost_breakdown": {
+        "production": 1304.8,
+        "energy": 344.96000000000004,
+        "transport": 672.0,
+        "duty": 391.818
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0020",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0021",
+      "plant": "C",
+      "qty": 44,
+      "dispatch": "2026-02-04",
+      "arrival": "2026-02-08",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2167.3828,
+      "carbon_kg": 4.7696,
+      "cost_breakdown": {
+        "production": 1025.2,
+        "energy": 271.03999999999996,
+        "transport": 748.0,
+        "duty": 123.14280000000001
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0021",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0022",
+      "plant": "C",
+      "qty": 105,
+      "dispatch": "2026-01-18",
+      "arrival": "2026-01-23",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5660.0544,
+      "carbon_kg": 11.382,
+      "cost_breakdown": {
+        "production": 2310.0,
+        "energy": 646.8,
+        "transport": 2310.0,
+        "duty": 393.25440000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0022",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0023",
+      "plant": "B",
+      "qty": 32,
+      "dispatch": "2026-01-07",
+      "arrival": "2026-01-12",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1606.37824,
+      "carbon_kg": 8.7232,
+      "cost_breakdown": {
+        "production": 624.0,
+        "energy": 234.24,
+        "transport": 640.0,
+        "duty": 108.13824
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0023",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0024",
+      "plant": "C",
+      "qty": 76,
+      "dispatch": "2026-02-09",
+      "arrival": "2026-02-13",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3418.12736,
+      "carbon_kg": 8.238399999999999,
+      "cost_breakdown": {
+        "production": 1672.0,
+        "energy": 468.15999999999997,
+        "transport": 912.0,
+        "duty": 365.96736
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0024",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0025",
+      "plant": "B",
+      "qty": 102,
+      "dispatch": "2026-01-25",
+      "arrival": "2026-01-29",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4218.15798,
+      "carbon_kg": 27.805199999999996,
+      "cost_breakdown": {
+        "production": 1989.0,
+        "energy": 746.64,
+        "transport": 1224.0,
+        "duty": 258.51797999999997
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0025",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0026",
+      "plant": "C",
+      "qty": 112,
+      "dispatch": "2026-01-22",
+      "arrival": "2026-01-27",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6217.1648000000005,
+      "carbon_kg": 12.1408,
+      "cost_breakdown": {
+        "production": 2464.0,
+        "energy": 689.92,
+        "transport": 2464.0,
+        "duty": 599.2448
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0026",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0027",
+      "plant": "C",
+      "qty": 66,
+      "dispatch": "2026-01-28",
+      "arrival": "2026-02-03",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4132.731239999999,
+      "carbon_kg": 7.1544,
+      "cost_breakdown": {
+        "production": 1537.8,
+        "energy": 406.56,
+        "transport": 1782.0,
+        "duty": 406.37123999999994
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0027",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0028",
+      "plant": "C",
+      "qty": 82,
+      "dispatch": "2026-01-22",
+      "arrival": "2026-01-26",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3766.9094400000004,
+      "carbon_kg": 8.8888,
+      "cost_breakdown": {
+        "production": 1910.6000000000001,
+        "energy": 505.12,
+        "transport": 984.0,
+        "duty": 367.18944000000005
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0028",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0029",
+      "plant": "C",
+      "qty": 87,
+      "dispatch": "2026-01-19",
+      "arrival": "2026-01-23",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4208.2108800000005,
+      "carbon_kg": 9.430800000000001,
+      "cost_breakdown": {
+        "production": 1914.0,
+        "energy": 535.9200000000001,
+        "transport": 1479.0,
+        "duty": 279.29088
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0029",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0030",
+      "plant": "B",
+      "qty": 110,
+      "dispatch": "2026-02-03",
+      "arrival": "2026-02-06",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4604.6275,
+      "carbon_kg": 29.985999999999997,
+      "cost_breakdown": {
+        "production": 2145.0,
+        "energy": 805.1999999999999,
+        "transport": 880.0,
+        "duty": 774.4275
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0030",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0031",
+      "plant": "C",
+      "qty": 131,
+      "dispatch": "2026-02-04",
+      "arrival": "2026-02-08",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6266.4112000000005,
+      "carbon_kg": 14.2004,
+      "cost_breakdown": {
+        "production": 2882.0,
+        "energy": 806.96,
+        "transport": 2227.0,
+        "duty": 350.45120000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0031",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0032",
+      "plant": "B",
+      "qty": 67,
+      "dispatch": "2026-02-05",
+      "arrival": "2026-02-09",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3133.09018,
+      "carbon_kg": 18.2642,
+      "cost_breakdown": {
+        "production": 1306.5,
+        "energy": 490.43999999999994,
+        "transport": 1072.0,
+        "duty": 264.15018
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0032",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0033",
+      "plant": "C",
+      "qty": 72,
+      "dispatch": "2026-02-01",
+      "arrival": "2026-02-07",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4202.65728,
+      "carbon_kg": 7.8048,
+      "cost_breakdown": {
+        "production": 1584.0,
+        "energy": 443.52,
+        "transport": 1944.0,
+        "duty": 231.13728
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0033",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0034",
+      "plant": "C",
+      "qty": 129,
+      "dispatch": "2026-02-03",
+      "arrival": "2026-02-07",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5998.19814,
+      "carbon_kg": 13.9836,
+      "cost_breakdown": {
+        "production": 3005.7000000000003,
+        "energy": 794.64,
+        "transport": 1548.0,
+        "duty": 649.85814
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0034",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0035",
+      "plant": "C",
+      "qty": 33,
+      "dispatch": "2026-02-02",
+      "arrival": "2026-02-06",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1616.3013899999999,
+      "carbon_kg": 3.5772,
+      "cost_breakdown": {
+        "production": 768.9,
+        "energy": 203.28,
+        "transport": 561.0,
+        "duty": 83.12139
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0035",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0036",
+      "plant": "C",
+      "qty": 116,
+      "dispatch": "2026-01-30",
+      "arrival": "2026-02-04",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6439.206399999999,
+      "carbon_kg": 12.574399999999999,
+      "cost_breakdown": {
+        "production": 2552.0,
+        "energy": 714.56,
+        "transport": 2552.0,
+        "duty": 620.6464
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0036",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0037",
+      "plant": "B",
+      "qty": 78,
+      "dispatch": "2026-01-19",
+      "arrival": "2026-01-24",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4135.20276,
+      "carbon_kg": 21.2628,
+      "cost_breakdown": {
+        "production": 1521.0,
+        "energy": 570.96,
+        "transport": 1560.0,
+        "duty": 483.24276000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0037",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0038",
+      "plant": "C",
+      "qty": 103,
+      "dispatch": "2026-02-04",
+      "arrival": "2026-02-08",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4577.352959999999,
+      "carbon_kg": 11.165199999999999,
+      "cost_breakdown": {
+        "production": 2266.0,
+        "energy": 634.48,
+        "transport": 1236.0,
+        "duty": 440.87296
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0038",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0039",
+      "plant": "B",
+      "qty": 62,
+      "dispatch": "2026-02-02",
+      "arrival": "2026-02-06",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2616.35784,
+      "carbon_kg": 16.901200000000003,
+      "cost_breakdown": {
+        "production": 1209.0,
+        "energy": 453.84000000000003,
+        "transport": 744.0,
+        "duty": 209.51784
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0039",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0040",
+      "plant": "C",
+      "qty": 89,
+      "dispatch": "2026-02-08",
+      "arrival": "2026-02-12",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4169.472,
+      "carbon_kg": 9.6476,
+      "cost_breakdown": {
+        "production": 1958.0,
+        "energy": 548.24,
+        "transport": 1068.0,
+        "duty": 595.232
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0040",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0041",
+      "plant": "C",
+      "qty": 133,
+      "dispatch": "2026-02-11",
+      "arrival": "2026-02-15",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6551.4071,
+      "carbon_kg": 14.417200000000001,
+      "cost_breakdown": {
+        "production": 3098.9,
+        "energy": 819.28,
+        "transport": 2261.0,
+        "duty": 372.2271
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0041",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0042",
+      "plant": "C",
+      "qty": 43,
+      "dispatch": "2026-02-18",
+      "arrival": "2026-02-23",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2381.26174,
+      "carbon_kg": 4.6612,
+      "cost_breakdown": {
+        "production": 1001.9,
+        "energy": 264.88,
+        "transport": 946.0,
+        "duty": 168.48174
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0042",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0043",
+      "plant": "C",
+      "qty": 97,
+      "dispatch": "2026-02-17",
+      "arrival": "2026-02-23",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5661.913280000001,
+      "carbon_kg": 10.514800000000001,
+      "cost_breakdown": {
+        "production": 2134.0,
+        "energy": 597.52,
+        "transport": 2619.0,
+        "duty": 311.39328
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0043",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0044",
+      "plant": "B",
+      "qty": 36,
+      "dispatch": "2026-02-02",
+      "arrival": "2026-02-05",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1436.00328,
+      "carbon_kg": 9.813600000000001,
+      "cost_breakdown": {
+        "production": 702.0,
+        "energy": 263.52,
+        "transport": 288.0,
+        "duty": 182.48328
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0044",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0045",
+      "plant": "C",
+      "qty": 113,
+      "dispatch": "2026-02-20",
+      "arrival": "2026-02-24",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5375.14784,
+      "carbon_kg": 12.249199999999998,
+      "cost_breakdown": {
+        "production": 2486.0,
+        "energy": 696.0799999999999,
+        "transport": 1921.0,
+        "duty": 272.06784
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0045",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0046",
+      "plant": "B",
+      "qty": 75,
+      "dispatch": "2026-02-22",
+      "arrival": "2026-02-26",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3633.915,
+      "carbon_kg": 20.445,
+      "cost_breakdown": {
+        "production": 1462.5,
+        "energy": 549.0,
+        "transport": 1200.0,
+        "duty": 422.41499999999996
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0046",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0047",
+      "plant": "C",
+      "qty": 121,
+      "dispatch": "2026-02-08",
+      "arrival": "2026-02-14",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 7386.498240000001,
+      "carbon_kg": 13.116399999999999,
+      "cost_breakdown": {
+        "production": 2662.0,
+        "energy": 745.36,
+        "transport": 3267.0,
+        "duty": 712.13824
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0047",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0048",
+      "plant": "C",
+      "qty": 128,
+      "dispatch": "2026-02-13",
+      "arrival": "2026-02-17",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5880.05376,
+      "carbon_kg": 13.8752,
+      "cost_breakdown": {
+        "production": 2982.4,
+        "energy": 788.48,
+        "transport": 1536.0,
+        "duty": 573.17376
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0048",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0049",
+      "plant": "C",
+      "qty": 52,
+      "dispatch": "2026-02-23",
+      "arrival": "2026-02-27",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2590.55888,
+      "carbon_kg": 5.6368,
+      "cost_breakdown": {
+        "production": 1211.6000000000001,
+        "energy": 320.32,
+        "transport": 884.0,
+        "duty": 174.63888000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0049",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0050",
+      "plant": "C",
+      "qty": 98,
+      "dispatch": "2026-02-12",
+      "arrival": "2026-02-16",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4591.103999999999,
+      "carbon_kg": 10.6232,
+      "cost_breakdown": {
+        "production": 2156.0,
+        "energy": 603.68,
+        "transport": 1176.0,
+        "duty": 655.424
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0050",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0051",
+      "plant": "B",
+      "qty": 120,
+      "dispatch": "2026-02-03",
+      "arrival": "2026-02-07",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4996.331999999999,
+      "carbon_kg": 32.712,
+      "cost_breakdown": {
+        "production": 2340.0,
+        "energy": 878.4000000000001,
+        "transport": 1440.0,
+        "duty": 337.932
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0051",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0052",
+      "plant": "C",
+      "qty": 117,
+      "dispatch": "2026-02-06",
+      "arrival": "2026-02-11",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6306.917759999999,
+      "carbon_kg": 12.682799999999999,
+      "cost_breakdown": {
+        "production": 2574.0,
+        "energy": 720.7199999999999,
+        "transport": 2574.0,
+        "duty": 438.19776
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0052",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0053",
+      "plant": "B",
+      "qty": 116,
+      "dispatch": "2026-02-25",
+      "arrival": "2026-03-02",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5823.12112,
+      "carbon_kg": 31.6216,
+      "cost_breakdown": {
+        "production": 2262.0,
+        "energy": 849.1200000000001,
+        "transport": 2320.0,
+        "duty": 392.00112
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0053",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0054",
+      "plant": "C",
+      "qty": 114,
+      "dispatch": "2026-02-27",
+      "arrival": "2026-03-03",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5127.19104,
+      "carbon_kg": 12.357600000000001,
+      "cost_breakdown": {
+        "production": 2508.0,
+        "energy": 702.24,
+        "transport": 1368.0,
+        "duty": 548.95104
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0054",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0055",
+      "plant": "C",
+      "qty": 79,
+      "dispatch": "2026-03-01",
+      "arrival": "2026-03-05",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3869.3275700000004,
+      "carbon_kg": 8.563600000000001,
+      "cost_breakdown": {
+        "production": 1840.7,
+        "energy": 486.64,
+        "transport": 1343.0,
+        "duty": 198.98757000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0055",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0056",
+      "plant": "C",
+      "qty": 56,
+      "dispatch": "2026-02-26",
+      "arrival": "2026-03-03",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3195.2144000000003,
+      "carbon_kg": 6.0704,
+      "cost_breakdown": {
+        "production": 1304.8,
+        "energy": 344.96,
+        "transport": 1232.0,
+        "duty": 313.4544
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0056",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0057",
+      "plant": "C",
+      "qty": 88,
+      "dispatch": "2026-02-16",
+      "arrival": "2026-02-22",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5371.99872,
+      "carbon_kg": 9.5392,
+      "cost_breakdown": {
+        "production": 1936.0,
+        "energy": 542.0799999999999,
+        "transport": 2376.0,
+        "duty": 517.91872
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0057",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0058",
+      "plant": "B",
+      "qty": 83,
+      "dispatch": "2026-01-14",
+      "arrival": "2026-01-17",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3264.03808,
+      "carbon_kg": 22.625799999999998,
+      "cost_breakdown": {
+        "production": 1618.5,
+        "energy": 607.56,
+        "transport": 664.0,
+        "duty": 373.97808000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0058",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0059",
+      "plant": "C",
+      "qty": 29,
+      "dispatch": "2026-02-12",
+      "arrival": "2026-02-16",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1402.73696,
+      "carbon_kg": 3.1435999999999997,
+      "cost_breakdown": {
+        "production": 638.0,
+        "energy": 178.64,
+        "transport": 493.0,
+        "duty": 93.09696
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0059",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0060",
+      "plant": "B",
+      "qty": 53,
+      "dispatch": "2026-02-15",
+      "arrival": "2026-02-18",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2218.59325,
+      "carbon_kg": 14.447799999999999,
+      "cost_breakdown": {
+        "production": 1033.5,
+        "energy": 387.96,
+        "transport": 424.0,
+        "duty": 373.13325000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0060",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0061",
+      "plant": "C",
+      "qty": 75,
+      "dispatch": "2026-03-01",
+      "arrival": "2026-03-05",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3587.64,
+      "carbon_kg": 8.13,
+      "cost_breakdown": {
+        "production": 1650.0,
+        "energy": 462.0,
+        "transport": 1275.0,
+        "duty": 200.64000000000001
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0061",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0062",
+      "plant": "C",
+      "qty": 100,
+      "dispatch": "2026-02-26",
+      "arrival": "2026-03-03",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5537.818,
+      "carbon_kg": 10.84,
+      "cost_breakdown": {
+        "production": 2330.0,
+        "energy": 616.0,
+        "transport": 2200.0,
+        "duty": 391.81800000000004
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0062",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0063",
+      "plant": "C",
+      "qty": 123,
+      "dispatch": "2026-03-01",
+      "arrival": "2026-03-07",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 7357.66812,
+      "carbon_kg": 13.333200000000001,
+      "cost_breakdown": {
+        "production": 2865.9,
+        "energy": 757.6800000000001,
+        "transport": 3321.0,
+        "duty": 413.08812
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0063",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0064",
+      "plant": "C",
+      "qty": 34,
+      "dispatch": "2026-02-18",
+      "arrival": "2026-02-22",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1529.16224,
+      "carbon_kg": 3.6856,
+      "cost_breakdown": {
+        "production": 748.0,
+        "energy": 209.44,
+        "transport": 408.0,
+        "duty": 163.72224000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0064",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0065",
+      "plant": "B",
+      "qty": 91,
+      "dispatch": "2026-02-17",
+      "arrival": "2026-02-21",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3763.25859,
+      "carbon_kg": 24.8066,
+      "cost_breakdown": {
+        "production": 1774.5,
+        "energy": 666.12,
+        "transport": 1092.0,
+        "duty": 230.63859
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0065",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0066",
+      "plant": "C",
+      "qty": 90,
+      "dispatch": "2026-03-04",
+      "arrival": "2026-03-09",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4995.936,
+      "carbon_kg": 9.756,
+      "cost_breakdown": {
+        "production": 1980.0,
+        "energy": 554.4,
+        "transport": 1980.0,
+        "duty": 481.536
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0066",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0067",
+      "plant": "B",
+      "qty": 35,
+      "dispatch": "2026-01-20",
+      "arrival": "2026-01-25",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1855.5397,
+      "carbon_kg": 9.541,
+      "cost_breakdown": {
+        "production": 682.5,
+        "energy": 256.20000000000005,
+        "transport": 700.0,
+        "duty": 216.83970000000002
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0067",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0068",
+      "plant": "C",
+      "qty": 116,
+      "dispatch": "2026-02-26",
+      "arrival": "2026-03-02",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5155.07712,
+      "carbon_kg": 12.574399999999999,
+      "cost_breakdown": {
+        "production": 2552.0,
+        "energy": 714.56,
+        "transport": 1392.0,
+        "duty": 496.51712
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0068",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0069",
+      "plant": "C",
+      "qty": 94,
+      "dispatch": "2026-02-23",
+      "arrival": "2026-02-27",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4682.93336,
+      "carbon_kg": 10.1896,
+      "cost_breakdown": {
+        "production": 2190.2000000000003,
+        "energy": 579.04,
+        "transport": 1598.0,
+        "duty": 315.69336000000004
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0069",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0070",
+      "plant": "C",
+      "qty": 64,
+      "dispatch": "2026-03-06",
+      "arrival": "2026-03-10",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3101.232,
+      "carbon_kg": 6.9376,
+      "cost_breakdown": {
+        "production": 1491.2,
+        "energy": 394.24,
+        "transport": 768.0,
+        "duty": 447.792
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0070",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0071",
+      "plant": "C",
+      "qty": 138,
+      "dispatch": "2026-02-27",
+      "arrival": "2026-03-03",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6601.2576,
+      "carbon_kg": 14.9592,
+      "cost_breakdown": {
+        "production": 3036.0,
+        "energy": 850.0799999999999,
+        "transport": 2346.0,
+        "duty": 369.1776
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0071",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0072",
+      "plant": "B",
+      "qty": 56,
+      "dispatch": "2026-02-03",
+      "arrival": "2026-02-07",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2618.70224,
+      "carbon_kg": 15.2656,
+      "cost_breakdown": {
+        "production": 1092.0,
+        "energy": 409.91999999999996,
+        "transport": 896.0,
+        "duty": 220.78224
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0072",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0073",
+      "plant": "C",
+      "qty": 139,
+      "dispatch": "2026-03-15",
+      "arrival": "2026-03-21",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 8113.46336,
+      "carbon_kg": 15.0676,
+      "cost_breakdown": {
+        "production": 3058.0,
+        "energy": 856.24,
+        "transport": 3753.0,
+        "duty": 446.22336
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0073",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0074",
+      "plant": "B",
+      "qty": 28,
+      "dispatch": "2026-01-22",
+      "arrival": "2026-01-25",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1116.89144,
+      "carbon_kg": 7.6328,
+      "cost_breakdown": {
+        "production": 546.0,
+        "energy": 204.95999999999998,
+        "transport": 224.0,
+        "duty": 141.93144
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0074",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0075",
+      "plant": "C",
+      "qty": 119,
+      "dispatch": "2026-02-25",
+      "arrival": "2026-03-01",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5660.55392,
+      "carbon_kg": 12.8996,
+      "cost_breakdown": {
+        "production": 2618.0,
+        "energy": 733.04,
+        "transport": 2023.0,
+        "duty": 286.51392000000004
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0075",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0076",
+      "plant": "C",
+      "qty": 123,
+      "dispatch": "2026-03-04",
+      "arrival": "2026-03-09",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 7018.0602,
+      "carbon_kg": 13.3332,
+      "cost_breakdown": {
+        "production": 2865.9,
+        "energy": 757.68,
+        "transport": 2706.0,
+        "duty": 688.4802
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0076",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0077",
+      "plant": "C",
+      "qty": 130,
+      "dispatch": "2026-03-04",
+      "arrival": "2026-03-10",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 8140.2282000000005,
+      "carbon_kg": 14.092,
+      "cost_breakdown": {
+        "production": 3029.0,
+        "energy": 800.8000000000001,
+        "transport": 3510.0,
+        "duty": 800.4282000000001
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0077",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0078",
+      "plant": "C",
+      "qty": 74,
+      "dispatch": "2026-03-17",
+      "arrival": "2026-03-21",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3288.58368,
+      "carbon_kg": 8.021600000000001,
+      "cost_breakdown": {
+        "production": 1628.0,
+        "energy": 455.84000000000003,
+        "transport": 888.0,
+        "duty": 316.74368000000004
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0078",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0079",
+      "plant": "B",
+      "qty": 39,
+      "dispatch": "2026-02-22",
+      "arrival": "2026-02-26",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1645.77348,
+      "carbon_kg": 10.6314,
+      "cost_breakdown": {
+        "production": 760.5,
+        "energy": 285.48,
+        "transport": 468.0,
+        "duty": 131.79348000000002
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0079",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0080",
+      "plant": "C",
+      "qty": 83,
+      "dispatch": "2026-03-19",
+      "arrival": "2026-03-23",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3888.384,
+      "carbon_kg": 8.9972,
+      "cost_breakdown": {
+        "production": 1826.0,
+        "energy": 511.28000000000003,
+        "transport": 996.0,
+        "duty": 555.104
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0080",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0081",
+      "plant": "B",
+      "qty": 139,
+      "dispatch": "2026-03-03",
+      "arrival": "2026-03-07",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5787.4178999999995,
+      "carbon_kg": 37.8914,
+      "cost_breakdown": {
+        "production": 2710.5,
+        "energy": 1017.4799999999999,
+        "transport": 1668.0,
+        "duty": 391.4379
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0081",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0082",
+      "plant": "C",
+      "qty": 72,
+      "dispatch": "2026-03-11",
+      "arrival": "2026-03-16",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3881.18016,
+      "carbon_kg": 7.8048,
+      "cost_breakdown": {
+        "production": 1584.0,
+        "energy": 443.52,
+        "transport": 1584.0,
+        "duty": 269.66016
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0082",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0083",
+      "plant": "C",
+      "qty": 73,
+      "dispatch": "2026-03-16",
+      "arrival": "2026-03-22",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4366.74612,
+      "carbon_kg": 7.913200000000001,
+      "cost_breakdown": {
+        "production": 1700.9,
+        "energy": 449.68,
+        "transport": 1971.0,
+        "duty": 245.16612
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0083",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0084",
+      "plant": "C",
+      "qty": 61,
+      "dispatch": "2026-03-09",
+      "arrival": "2026-03-13",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2836.3572599999998,
+      "carbon_kg": 6.612400000000001,
+      "cost_breakdown": {
+        "production": 1421.3,
+        "energy": 375.76,
+        "transport": 732.0,
+        "duty": 307.29726
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0084",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0085",
+      "plant": "C",
+      "qty": 63,
+      "dispatch": "2026-02-27",
+      "arrival": "2026-03-03",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2996.76384,
+      "carbon_kg": 6.8292,
+      "cost_breakdown": {
+        "production": 1386.0,
+        "energy": 388.08,
+        "transport": 1071.0,
+        "duty": 151.68384
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0085",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0086",
+      "plant": "B",
+      "qty": 37,
+      "dispatch": "2026-01-28",
+      "arrival": "2026-02-01",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1792.7314000000001,
+      "carbon_kg": 10.0862,
+      "cost_breakdown": {
+        "production": 721.5,
+        "energy": 270.84000000000003,
+        "transport": 592.0,
+        "duty": 208.3914
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0086",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0087",
+      "plant": "C",
+      "qty": 113,
+      "dispatch": "2026-03-19",
+      "arrival": "2026-03-25",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6898.13472,
+      "carbon_kg": 12.249199999999998,
+      "cost_breakdown": {
+        "production": 2486.0,
+        "energy": 696.0799999999999,
+        "transport": 3051.0,
+        "duty": 665.05472
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0087",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0088",
+      "plant": "B",
+      "qty": 105,
+      "dispatch": "2026-03-19",
+      "arrival": "2026-03-22",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4129.2047999999995,
+      "carbon_kg": 28.622999999999998,
+      "cost_breakdown": {
+        "production": 2047.5,
+        "energy": 768.5999999999999,
+        "transport": 840.0,
+        "duty": 473.1048
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0088",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0089",
+      "plant": "C",
+      "qty": 107,
+      "dispatch": "2026-03-12",
+      "arrival": "2026-03-16",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5175.61568,
+      "carbon_kg": 11.5988,
+      "cost_breakdown": {
+        "production": 2354.0,
+        "energy": 659.12,
+        "transport": 1819.0,
+        "duty": 343.49568
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0089",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0090",
+      "plant": "C",
+      "qty": 128,
+      "dispatch": "2026-03-20",
+      "arrival": "2026-03-24",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6202.464,
+      "carbon_kg": 13.8752,
+      "cost_breakdown": {
+        "production": 2982.4,
+        "energy": 788.48,
+        "transport": 1536.0,
+        "duty": 895.584
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0090",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0091",
+      "plant": "C",
+      "qty": 132,
+      "dispatch": "2026-03-13",
+      "arrival": "2026-03-17",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6502.148399999999,
+      "carbon_kg": 14.3088,
+      "cost_breakdown": {
+        "production": 3075.6,
+        "energy": 813.12,
+        "transport": 2244.0,
+        "duty": 369.4284
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0091",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0092",
+      "plant": "C",
+      "qty": 82,
+      "dispatch": "2026-03-26",
+      "arrival": "2026-03-31",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4420.23296,
+      "carbon_kg": 8.8888,
+      "cost_breakdown": {
+        "production": 1804.0,
+        "energy": 505.12,
+        "transport": 1804.0,
+        "duty": 307.11296
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0092",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0093",
+      "plant": "B",
+      "qty": 81,
+      "dispatch": "2026-03-11",
+      "arrival": "2026-03-16",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4066.14492,
+      "carbon_kg": 22.080599999999997,
+      "cost_breakdown": {
+        "production": 1579.5,
+        "energy": 592.92,
+        "transport": 1620.0,
+        "duty": 273.72492
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0093",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0094",
+      "plant": "C",
+      "qty": 44,
+      "dispatch": "2026-03-12",
+      "arrival": "2026-03-16",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1978.91584,
+      "carbon_kg": 4.7696,
+      "cost_breakdown": {
+        "production": 968.0,
+        "energy": 271.03999999999996,
+        "transport": 528.0,
+        "duty": 211.87584
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0094",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0095",
+      "plant": "B",
+      "qty": 52,
+      "dispatch": "2026-02-02",
+      "arrival": "2026-02-06",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2150.4334799999997,
+      "carbon_kg": 14.1752,
+      "cost_breakdown": {
+        "production": 1014.0,
+        "energy": 380.64,
+        "transport": 624.0,
+        "duty": 131.79348
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0095",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0096",
+      "plant": "C",
+      "qty": 103,
+      "dispatch": "2026-03-26",
+      "arrival": "2026-03-31",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5717.571199999999,
+      "carbon_kg": 11.165199999999999,
+      "cost_breakdown": {
+        "production": 2266.0,
+        "energy": 634.48,
+        "transport": 2266.0,
+        "duty": 551.0912
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0096",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0097",
+      "plant": "C",
+      "qty": 94,
+      "dispatch": "2026-03-14",
+      "arrival": "2026-03-20",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5886.01116,
+      "carbon_kg": 10.1896,
+      "cost_breakdown": {
+        "production": 2190.2000000000003,
+        "energy": 579.04,
+        "transport": 2538.0,
+        "duty": 578.77116
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0097",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0098",
+      "plant": "C",
+      "qty": 135,
+      "dispatch": "2026-03-19",
+      "arrival": "2026-03-23",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6201.6192,
+      "carbon_kg": 14.634,
+      "cost_breakdown": {
+        "production": 3145.5,
+        "energy": 831.6,
+        "transport": 1620.0,
+        "duty": 604.5192
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0098",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0099",
+      "plant": "C",
+      "qty": 64,
+      "dispatch": "2026-03-20",
+      "arrival": "2026-03-24",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3095.6953599999997,
+      "carbon_kg": 6.9376,
+      "cost_breakdown": {
+        "production": 1408.0,
+        "energy": 394.24,
+        "transport": 1088.0,
+        "duty": 205.45536
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0099",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0100",
+      "plant": "B",
+      "qty": 63,
+      "dispatch": "2026-03-07",
+      "arrival": "2026-03-10",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2637.19575,
+      "carbon_kg": 17.1738,
+      "cost_breakdown": {
+        "production": 1228.5,
+        "energy": 461.15999999999997,
+        "transport": 504.0,
+        "duty": 443.53575
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0100",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0101",
+      "plant": "C",
+      "qty": 67,
+      "dispatch": "2026-04-08",
+      "arrival": "2026-04-12",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3204.9584000000004,
+      "carbon_kg": 7.2628,
+      "cost_breakdown": {
+        "production": 1474.0,
+        "energy": 412.72,
+        "transport": 1139.0,
+        "duty": 179.2384
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0101",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0102",
+      "plant": "B",
+      "qty": 81,
+      "dispatch": "2026-03-06",
+      "arrival": "2026-03-10",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3787.76574,
+      "carbon_kg": 22.080599999999997,
+      "cost_breakdown": {
+        "production": 1579.5,
+        "energy": 592.92,
+        "transport": 1296.0,
+        "duty": 319.34574
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0102",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0103",
+      "plant": "C",
+      "qty": 77,
+      "dispatch": "2026-03-25",
+      "arrival": "2026-03-31",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4494.5084799999995,
+      "carbon_kg": 8.3468,
+      "cost_breakdown": {
+        "production": 1694.0,
+        "energy": 474.32000000000005,
+        "transport": 2079.0,
+        "duty": 247.18848000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0103",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0104",
+      "plant": "C",
+      "qty": 112,
+      "dispatch": "2026-04-11",
+      "arrival": "2026-04-15",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5207.73792,
+      "carbon_kg": 12.1408,
+      "cost_breakdown": {
+        "production": 2609.6,
+        "energy": 689.9199999999998,
+        "transport": 1344.0,
+        "duty": 564.2179199999999
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0104",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0105",
+      "plant": "C",
+      "qty": 55,
+      "dispatch": "2026-04-08",
+      "arrival": "2026-04-12",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2693.83565,
+      "carbon_kg": 5.962,
+      "cost_breakdown": {
+        "production": 1281.5,
+        "energy": 338.8,
+        "transport": 935.0,
+        "duty": 138.53565
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0105",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0106",
+      "plant": "C",
+      "qty": 55,
+      "dispatch": "2026-03-31",
+      "arrival": "2026-04-05",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3053.072,
+      "carbon_kg": 5.962,
+      "cost_breakdown": {
+        "production": 1210.0,
+        "energy": 338.8,
+        "transport": 1210.0,
+        "duty": 294.272
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0106",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0107",
+      "plant": "B",
+      "qty": 115,
+      "dispatch": "2026-03-19",
+      "arrival": "2026-03-24",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6096.773300000001,
+      "carbon_kg": 31.348999999999993,
+      "cost_breakdown": {
+        "production": 2242.5,
+        "energy": 841.8,
+        "transport": 2300.0,
+        "duty": 712.4733000000001
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0107",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0108",
+      "plant": "C",
+      "qty": 109,
+      "dispatch": "2026-03-31",
+      "arrival": "2026-04-04",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4843.99488,
+      "carbon_kg": 11.8156,
+      "cost_breakdown": {
+        "production": 2398.0,
+        "energy": 671.44,
+        "transport": 1308.0,
+        "duty": 466.55487999999997
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0108",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0109",
+      "plant": "B",
+      "qty": 34,
+      "dispatch": "2026-02-25",
+      "arrival": "2026-03-01",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1434.7768800000001,
+      "carbon_kg": 9.2684,
+      "cost_breakdown": {
+        "production": 663.0,
+        "energy": 248.88,
+        "transport": 408.0,
+        "duty": 114.89688
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0109",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0110",
+      "plant": "C",
+      "qty": 76,
+      "dispatch": "2026-04-09",
+      "arrival": "2026-04-13",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3560.448,
+      "carbon_kg": 8.2384,
+      "cost_breakdown": {
+        "production": 1672.0,
+        "energy": 468.15999999999997,
+        "transport": 912.0,
+        "duty": 508.28799999999995
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0110",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0111",
+      "plant": "C",
+      "qty": 39,
+      "dispatch": "2026-04-02",
+      "arrival": "2026-04-06",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1921.0893,
+      "carbon_kg": 4.2276,
+      "cost_breakdown": {
+        "production": 908.7,
+        "energy": 240.23999999999998,
+        "transport": 663.0,
+        "duty": 109.14930000000001
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0111",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0112",
+      "plant": "C",
+      "qty": 105,
+      "dispatch": "2026-03-31",
+      "arrival": "2026-04-05",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5814.7089000000005,
+      "carbon_kg": 11.382,
+      "cost_breakdown": {
+        "production": 2446.5,
+        "energy": 646.8000000000001,
+        "transport": 2310.0,
+        "duty": 411.4089000000001
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0112",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0113",
+      "plant": "C",
+      "qty": 107,
+      "dispatch": "2026-04-02",
+      "arrival": "2026-04-08",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6245.61568,
+      "carbon_kg": 11.5988,
+      "cost_breakdown": {
+        "production": 2354.0,
+        "energy": 659.12,
+        "transport": 2889.0,
+        "duty": 343.49568
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0113",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0114",
+      "plant": "B",
+      "qty": 117,
+      "dispatch": "2026-03-09",
+      "arrival": "2026-03-12",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4667.01066,
+      "carbon_kg": 31.8942,
+      "cost_breakdown": {
+        "production": 2281.5,
+        "energy": 856.44,
+        "transport": 936.0,
+        "duty": 593.07066
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0114",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0115",
+      "plant": "C",
+      "qty": 87,
+      "dispatch": "2026-04-02",
+      "arrival": "2026-04-06",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 4138.38816,
+      "carbon_kg": 9.430800000000001,
+      "cost_breakdown": {
+        "production": 1914.0,
+        "energy": 535.92,
+        "transport": 1479.0,
+        "duty": 209.46816
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0115",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P3",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0116",
+      "plant": "B",
+      "qty": 78,
+      "dispatch": "2026-04-18",
+      "arrival": "2026-04-22",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3779.2716,
+      "carbon_kg": 21.2628,
+      "cost_breakdown": {
+        "production": 1521.0,
+        "energy": 570.96,
+        "transport": 1248.0,
+        "duty": 439.3116
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0116",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0117",
+      "plant": "C",
+      "qty": 27,
+      "dispatch": "2026-04-15",
+      "arrival": "2026-04-21",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 1648.2268800000002,
+      "carbon_kg": 2.9268,
+      "cost_breakdown": {
+        "production": 594.0,
+        "energy": 166.32000000000002,
+        "transport": 729.0,
+        "duty": 158.90688
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0117",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0118",
+      "plant": "C",
+      "qty": 81,
+      "dispatch": "2026-04-15",
+      "arrival": "2026-04-19",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 3720.9715199999996,
+      "carbon_kg": 8.7804,
+      "cost_breakdown": {
+        "production": 1887.3,
+        "energy": 498.9599999999999,
+        "transport": 972.0,
+        "duty": 362.71151999999995
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0118",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0119",
+      "plant": "C",
+      "qty": 101,
+      "dispatch": "2026-04-10",
+      "arrival": "2026-04-14",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5031.66244,
+      "carbon_kg": 10.9484,
+      "cost_breakdown": {
+        "production": 2353.3,
+        "energy": 622.1600000000001,
+        "transport": 1717.0,
+        "duty": 339.20244
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0119",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "ORD-0120",
+      "plant": "C",
+      "qty": 60,
+      "dispatch": "2026-04-06",
+      "arrival": "2026-04-10",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2810.88,
+      "carbon_kg": 6.504,
+      "cost_breakdown": {
+        "production": 1320.0,
+        "energy": 369.59999999999997,
+        "transport": 720.0,
+        "duty": 401.28
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:ORD-0120",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P1",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "SCN-001",
+      "plant": "B",
+      "qty": 120,
+      "dispatch": "2026-01-09",
+      "arrival": "2026-01-14",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 6361.850399999999,
+      "carbon_kg": 32.711999999999996,
+      "cost_breakdown": {
+        "production": 2340.0,
+        "energy": 878.4,
+        "transport": 2400.0,
+        "duty": 743.4504000000001
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:SCN-001",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P2",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "SCN-002",
+      "plant": "C",
+      "qty": 90,
+      "dispatch": "2026-01-23",
+      "arrival": "2026-01-29",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 5383.6596,
+      "carbon_kg": 9.756,
+      "cost_breakdown": {
+        "production": 2097.0,
+        "energy": 554.4,
+        "transport": 2430.0,
+        "duty": 302.25960000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:SCN-002",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P7",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "SCN-003",
+      "plant": "C",
+      "qty": 55,
+      "dispatch": "2026-01-21",
+      "arrival": "2026-01-25",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2576.6400000000003,
+      "carbon_kg": 5.962,
+      "cost_breakdown": {
+        "production": 1210.0,
+        "energy": 338.80000000000007,
+        "transport": 660.0,
+        "duty": 367.84000000000003
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:SCN-003",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P5",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "SCN-004",
+      "plant": "B",
+      "qty": 70,
+      "dispatch": "2026-01-04",
+      "arrival": "2026-01-07",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 2792.2286,
+      "carbon_kg": 19.081999999999997,
+      "cost_breakdown": {
+        "production": 1365.0,
+        "energy": 512.4,
+        "transport": 560.0,
+        "duty": 354.8286
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:SCN-004",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:B:P4",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    },
+    {
+      "order_id": "SCN-IMP-001",
+      "plant": "C",
+      "qty": 200,
+      "dispatch": "2026-01-02",
+      "arrival": "2026-01-06",
+      "on_time": true,
+      "late_days": 0,
+      "cost": 9691.35,
+      "carbon_kg": 21.68,
+      "cost_breakdown": {
+        "production": 4660.0,
+        "energy": 1232.0,
+        "transport": 2400.0,
+        "duty": 1399.35
+      },
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:orders:SCN-IMP-001",
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:plants:C:P6",
+        "config:6ede1e28b20cf57d1e7a"
+      ]
+    }
+  ],
+  "production_schedule": [
+    {
+      "order_id": "ORD-0001",
+      "plant": "C",
+      "date": "2026-01-09",
+      "qty": 35
+    },
+    {
+      "order_id": "ORD-0002",
+      "plant": "B",
+      "date": "2026-01-05",
+      "qty": 100
+    },
+    {
+      "order_id": "ORD-0003",
+      "plant": "C",
+      "date": "2026-01-14",
+      "qty": 74
+    },
+    {
+      "order_id": "ORD-0004",
+      "plant": "B",
+      "date": "2026-01-01",
+      "qty": 34
+    },
+    {
+      "order_id": "ORD-0005",
+      "plant": "C",
+      "date": "2026-01-05",
+      "qty": 48
+    },
+    {
+      "order_id": "ORD-0006",
+      "plant": "C",
+      "date": "2026-01-16",
+      "qty": 51
+    },
+    {
+      "order_id": "ORD-0006",
+      "plant": "C",
+      "date": "2026-01-28",
+      "qty": 34
+    },
+    {
+      "order_id": "ORD-0007",
+      "plant": "C",
+      "date": "2026-01-13",
+      "qty": 109
+    },
+    {
+      "order_id": "ORD-0008",
+      "plant": "C",
+      "date": "2026-01-07",
+      "qty": 31
+    },
+    {
+      "order_id": "ORD-0008",
+      "plant": "C",
+      "date": "2026-01-26",
+      "qty": 76
+    },
+    {
+      "order_id": "ORD-0009",
+      "plant": "B",
+      "date": "2026-01-06",
+      "qty": 84
+    },
+    {
+      "order_id": "ORD-0010",
+      "plant": "C",
+      "date": "2026-01-06",
+      "qty": 121
+    },
+    {
+      "order_id": "ORD-0011",
+      "plant": "B",
+      "date": "2026-01-12",
+      "qty": 69
+    },
+    {
+      "order_id": "ORD-0011",
+      "plant": "B",
+      "date": "2026-01-15",
+      "qty": 13
+    },
+    {
+      "order_id": "ORD-0012",
+      "plant": "C",
+      "date": "2026-01-22",
+      "qty": 45
+    },
+    {
+      "order_id": "ORD-0013",
+      "plant": "C",
+      "date": "2026-01-07",
+      "qty": 97
+    },
+    {
+      "order_id": "ORD-0013",
+      "plant": "C",
+      "date": "2026-01-15",
+      "qty": 17
+    },
+    {
+      "order_id": "ORD-0014",
+      "plant": "C",
+      "date": "2026-01-23",
+      "qty": 62
+    },
+    {
+      "order_id": "ORD-0014",
+      "plant": "C",
+      "date": "2026-01-26",
+      "qty": 9
+    },
+    {
+      "order_id": "ORD-0015",
+      "plant": "C",
+      "date": "2026-01-08",
+      "qty": 87
+    },
+    {
+      "order_id": "ORD-0016",
+      "plant": "B",
+      "date": "2026-01-02",
+      "qty": 76
+    },
+    {
+      "order_id": "ORD-0017",
+      "plant": "C",
+      "date": "2026-01-09",
+      "qty": 35
+    },
+    {
+      "order_id": "ORD-0018",
+      "plant": "B",
+      "date": "2026-01-13",
+      "qty": 127
+    },
+    {
+      "order_id": "ORD-0019",
+      "plant": "C",
+      "date": "2026-01-05",
+      "qty": 80
+    },
+    {
+      "order_id": "ORD-0019",
+      "plant": "C",
+      "date": "2026-01-26",
+      "qty": 43
+    },
+    {
+      "order_id": "ORD-0020",
+      "plant": "C",
+      "date": "2026-01-06",
+      "qty": 7
+    },
+    {
+      "order_id": "ORD-0020",
+      "plant": "C",
+      "date": "2026-01-20",
+      "qty": 1
+    },
+    {
+      "order_id": "ORD-0020",
+      "plant": "C",
+      "date": "2026-01-22",
+      "qty": 8
+    },
+    {
+      "order_id": "ORD-0020",
+      "plant": "C",
+      "date": "2026-01-27",
+      "qty": 40
+    },
+    {
+      "order_id": "ORD-0021",
+      "plant": "C",
+      "date": "2026-01-01",
+      "qty": 44
+    },
+    {
+      "order_id": "ORD-0022",
+      "plant": "C",
+      "date": "2026-01-12",
+      "qty": 41
+    },
+    {
+      "order_id": "ORD-0022",
+      "plant": "C",
+      "date": "2026-01-15",
+      "qty": 64
+    },
+    {
+      "order_id": "ORD-0023",
+      "plant": "B",
+      "date": "2026-01-06",
+      "qty": 32
+    },
+    {
+      "order_id": "ORD-0024",
+      "plant": "C",
+      "date": "2026-01-16",
+      "qty": 76
+    },
+    {
+      "order_id": "ORD-0025",
+      "plant": "B",
+      "date": "2026-01-16",
+      "qty": 32
+    },
+    {
+      "order_id": "ORD-0025",
+      "plant": "B",
+      "date": "2026-01-19",
+      "qty": 70
+    },
+    {
+      "order_id": "ORD-0026",
+      "plant": "C",
+      "date": "2026-01-13",
+      "qty": 19
+    },
+    {
+      "order_id": "ORD-0026",
+      "plant": "C",
+      "date": "2026-01-20",
+      "qty": 93
+    },
+    {
+      "order_id": "ORD-0027",
+      "plant": "C",
+      "date": "2026-01-23",
+      "qty": 66
+    },
+    {
+      "order_id": "ORD-0028",
+      "plant": "C",
+      "date": "2026-01-08",
+      "qty": 9
+    },
+    {
+      "order_id": "ORD-0028",
+      "plant": "C",
+      "date": "2026-01-21",
+      "qty": 12
+    },
+    {
+      "order_id": "ORD-0028",
+      "plant": "C",
+      "date": "2026-01-22",
+      "qty": 61
+    },
+    {
+      "order_id": "ORD-0029",
+      "plant": "C",
+      "date": "2026-01-12",
+      "qty": 87
+    },
+    {
+      "order_id": "ORD-0030",
+      "plant": "B",
+      "date": "2026-02-02",
+      "qty": 110
+    },
+    {
+      "order_id": "ORD-0031",
+      "plant": "C",
+      "date": "2026-01-28",
+      "qty": 3
+    },
+    {
+      "order_id": "ORD-0031",
+      "plant": "C",
+      "date": "2026-02-02",
+      "qty": 128
+    },
+    {
+      "order_id": "ORD-0032",
+      "plant": "B",
+      "date": "2026-02-05",
+      "qty": 67
+    },
+    {
+      "order_id": "ORD-0033",
+      "plant": "C",
+      "date": "2026-01-28",
+      "qty": 72
+    },
+    {
+      "order_id": "ORD-0034",
+      "plant": "C",
+      "date": "2026-01-19",
+      "qty": 128
+    },
+    {
+      "order_id": "ORD-0034",
+      "plant": "C",
+      "date": "2026-02-03",
+      "qty": 1
+    },
+    {
+      "order_id": "ORD-0035",
+      "plant": "C",
+      "date": "2026-01-22",
+      "qty": 14
+    },
+    {
+      "order_id": "ORD-0035",
+      "plant": "C",
+      "date": "2026-01-28",
+      "qty": 19
+    },
+    {
+      "order_id": "ORD-0036",
+      "plant": "C",
+      "date": "2026-01-21",
+      "qty": 116
+    },
+    {
+      "order_id": "ORD-0037",
+      "plant": "B",
+      "date": "2026-01-15",
+      "qty": 78
+    },
+    {
+      "order_id": "ORD-0038",
+      "plant": "C",
+      "date": "2026-01-29",
+      "qty": 103
+    },
+    {
+      "order_id": "ORD-0039",
+      "plant": "B",
+      "date": "2026-01-01",
+      "qty": 50
+    },
+    {
+      "order_id": "ORD-0039",
+      "plant": "B",
+      "date": "2026-01-29",
+      "qty": 12
+    },
+    {
+      "order_id": "ORD-0040",
+      "plant": "C",
+      "date": "2026-01-30",
+      "qty": 89
+    },
+    {
+      "order_id": "ORD-0041",
+      "plant": "C",
+      "date": "2026-02-10",
+      "qty": 50
+    },
+    {
+      "order_id": "ORD-0041",
+      "plant": "C",
+      "date": "2026-02-11",
+      "qty": 83
+    },
+    {
+      "order_id": "ORD-0042",
+      "plant": "C",
+      "date": "2026-01-30",
+      "qty": 39
+    },
+    {
+      "order_id": "ORD-0042",
+      "plant": "C",
+      "date": "2026-02-11",
+      "qty": 4
+    },
+    {
+      "order_id": "ORD-0043",
+      "plant": "C",
+      "date": "2026-02-09",
+      "qty": 78
+    },
+    {
+      "order_id": "ORD-0043",
+      "plant": "C",
+      "date": "2026-02-16",
+      "qty": 19
+    },
+    {
+      "order_id": "ORD-0044",
+      "plant": "B",
+      "date": "2026-01-07",
+      "qty": 12
+    },
+    {
+      "order_id": "ORD-0044",
+      "plant": "B",
+      "date": "2026-01-15",
+      "qty": 24
+    },
+    {
+      "order_id": "ORD-0045",
+      "plant": "C",
+      "date": "2026-02-20",
+      "qty": 113
+    },
+    {
+      "order_id": "ORD-0046",
+      "plant": "B",
+      "date": "2026-02-04",
+      "qty": 75
+    },
+    {
+      "order_id": "ORD-0047",
+      "plant": "C",
+      "date": "2026-02-04",
+      "qty": 121
+    },
+    {
+      "order_id": "ORD-0048",
+      "plant": "C",
+      "date": "2026-02-03",
+      "qty": 34
+    },
+    {
+      "order_id": "ORD-0048",
+      "plant": "C",
+      "date": "2026-02-12",
+      "qty": 94
+    },
+    {
+      "order_id": "ORD-0049",
+      "plant": "C",
+      "date": "2026-02-10",
+      "qty": 52
+    },
+    {
+      "order_id": "ORD-0050",
+      "plant": "C",
+      "date": "2026-02-03",
+      "qty": 93
+    },
+    {
+      "order_id": "ORD-0050",
+      "plant": "C",
+      "date": "2026-02-10",
+      "qty": 5
+    },
+    {
+      "order_id": "ORD-0051",
+      "plant": "B",
+      "date": "2026-01-16",
+      "qty": 120
+    },
+    {
+      "order_id": "ORD-0052",
+      "plant": "C",
+      "date": "2026-02-06",
+      "qty": 117
+    },
+    {
+      "order_id": "ORD-0053",
+      "plant": "B",
+      "date": "2026-01-26",
+      "qty": 116
+    },
+    {
+      "order_id": "ORD-0054",
+      "plant": "C",
+      "date": "2026-02-24",
+      "qty": 114
+    },
+    {
+      "order_id": "ORD-0055",
+      "plant": "C",
+      "date": "2026-02-13",
+      "qty": 36
+    },
+    {
+      "order_id": "ORD-0055",
+      "plant": "C",
+      "date": "2026-02-18",
+      "qty": 43
+    },
+    {
+      "order_id": "ORD-0056",
+      "plant": "C",
+      "date": "2026-02-18",
+      "qty": 44
+    },
+    {
+      "order_id": "ORD-0056",
+      "plant": "C",
+      "date": "2026-02-26",
+      "qty": 12
+    },
+    {
+      "order_id": "ORD-0057",
+      "plant": "C",
+      "date": "2026-01-27",
+      "qty": 88
+    },
+    {
+      "order_id": "ORD-0058",
+      "plant": "B",
+      "date": "2026-01-12",
+      "qty": 83
+    },
+    {
+      "order_id": "ORD-0059",
+      "plant": "C",
+      "date": "2026-02-05",
+      "qty": 29
+    },
+    {
+      "order_id": "ORD-0060",
+      "plant": "B",
+      "date": "2026-01-19",
+      "qty": 53
+    },
+    {
+      "order_id": "ORD-0061",
+      "plant": "C",
+      "date": "2026-02-17",
+      "qty": 34
+    },
+    {
+      "order_id": "ORD-0061",
+      "plant": "C",
+      "date": "2026-02-18",
+      "qty": 41
+    },
+    {
+      "order_id": "ORD-0062",
+      "plant": "C",
+      "date": "2026-01-20",
+      "qty": 34
+    },
+    {
+      "order_id": "ORD-0062",
+      "plant": "C",
+      "date": "2026-02-23",
+      "qty": 7
+    },
+    {
+      "order_id": "ORD-0062",
+      "plant": "C",
+      "date": "2026-02-25",
+      "qty": 59
+    },
+    {
+      "order_id": "ORD-0063",
+      "plant": "C",
+      "date": "2026-02-11",
+      "qty": 41
+    },
+    {
+      "order_id": "ORD-0063",
+      "plant": "C",
+      "date": "2026-02-13",
+      "qty": 21
+    },
+    {
+      "order_id": "ORD-0063",
+      "plant": "C",
+      "date": "2026-02-23",
+      "qty": 61
+    },
+    {
+      "order_id": "ORD-0064",
+      "plant": "C",
+      "date": "2026-02-12",
+      "qty": 34
+    },
+    {
+      "order_id": "ORD-0065",
+      "plant": "B",
+      "date": "2026-02-09",
+      "qty": 91
+    },
+    {
+      "order_id": "ORD-0066",
+      "plant": "C",
+      "date": "2026-02-17",
+      "qty": 30
+    },
+    {
+      "order_id": "ORD-0066",
+      "plant": "C",
+      "date": "2026-03-02",
+      "qty": 60
+    },
+    {
+      "order_id": "ORD-0067",
+      "plant": "B",
+      "date": "2026-01-02",
+      "qty": 6
+    },
+    {
+      "order_id": "ORD-0067",
+      "plant": "B",
+      "date": "2026-01-20",
+      "qty": 29
+    },
+    {
+      "order_id": "ORD-0068",
+      "plant": "C",
+      "date": "2026-02-26",
+      "qty": 116
+    },
+    {
+      "order_id": "ORD-0069",
+      "plant": "C",
+      "date": "2026-02-05",
+      "qty": 23
+    },
+    {
+      "order_id": "ORD-0069",
+      "plant": "C",
+      "date": "2026-02-06",
+      "qty": 11
+    },
+    {
+      "order_id": "ORD-0069",
+      "plant": "C",
+      "date": "2026-02-23",
+      "qty": 60
+    },
+    {
+      "order_id": "ORD-0070",
+      "plant": "C",
+      "date": "2026-02-17",
+      "qty": 64
+    },
+    {
+      "order_id": "ORD-0071",
+      "plant": "C",
+      "date": "2026-02-13",
+      "qty": 71
+    },
+    {
+      "order_id": "ORD-0071",
+      "plant": "C",
+      "date": "2026-02-27",
+      "qty": 67
+    },
+    {
+      "order_id": "ORD-0072",
+      "plant": "B",
+      "date": "2026-01-21",
+      "qty": 56
+    },
+    {
+      "order_id": "ORD-0073",
+      "plant": "C",
+      "date": "2026-03-09",
+      "qty": 64
+    },
+    {
+      "order_id": "ORD-0073",
+      "plant": "C",
+      "date": "2026-03-13",
+      "qty": 75
+    },
+    {
+      "order_id": "ORD-0074",
+      "plant": "B",
+      "date": "2026-01-14",
+      "qty": 28
+    },
+    {
+      "order_id": "ORD-0075",
+      "plant": "C",
+      "date": "2026-02-09",
+      "qty": 50
+    },
+    {
+      "order_id": "ORD-0075",
+      "plant": "C",
+      "date": "2026-02-25",
+      "qty": 69
+    },
+    {
+      "order_id": "ORD-0076",
+      "plant": "C",
+      "date": "2026-01-15",
+      "qty": 47
+    },
+    {
+      "order_id": "ORD-0076",
+      "plant": "C",
+      "date": "2026-02-05",
+      "qty": 76
+    },
+    {
+      "order_id": "ORD-0077",
+      "plant": "C",
+      "date": "2026-02-16",
+      "qty": 109
+    },
+    {
+      "order_id": "ORD-0077",
+      "plant": "C",
+      "date": "2026-02-20",
+      "qty": 15
+    },
+    {
+      "order_id": "ORD-0077",
+      "plant": "C",
+      "date": "2026-03-03",
+      "qty": 6
+    },
+    {
+      "order_id": "ORD-0078",
+      "plant": "C",
+      "date": "2026-03-17",
+      "qty": 74
+    },
+    {
+      "order_id": "ORD-0079",
+      "plant": "B",
+      "date": "2026-02-10",
+      "qty": 39
+    },
+    {
+      "order_id": "ORD-0080",
+      "plant": "C",
+      "date": "2026-03-19",
+      "qty": 83
+    },
+    {
+      "order_id": "ORD-0081",
+      "plant": "B",
+      "date": "2026-03-03",
+      "qty": 139
+    },
+    {
+      "order_id": "ORD-0082",
+      "plant": "C",
+      "date": "2026-03-04",
+      "qty": 64
+    },
+    {
+      "order_id": "ORD-0082",
+      "plant": "C",
+      "date": "2026-03-05",
+      "qty": 8
+    },
+    {
+      "order_id": "ORD-0083",
+      "plant": "C",
+      "date": "2026-03-03",
+      "qty": 37
+    },
+    {
+      "order_id": "ORD-0083",
+      "plant": "C",
+      "date": "2026-03-12",
+      "qty": 15
+    },
+    {
+      "order_id": "ORD-0083",
+      "plant": "C",
+      "date": "2026-03-16",
+      "qty": 21
+    },
+    {
+      "order_id": "ORD-0084",
+      "plant": "C",
+      "date": "2026-02-27",
+      "qty": 61
+    },
+    {
+      "order_id": "ORD-0085",
+      "plant": "C",
+      "date": "2026-02-19",
+      "qty": 63
+    },
+    {
+      "order_id": "ORD-0086",
+      "plant": "B",
+      "date": "2026-01-15",
+      "qty": 37
+    },
+    {
+      "order_id": "ORD-0087",
+      "plant": "C",
+      "date": "2026-03-12",
+      "qty": 113
+    },
+    {
+      "order_id": "ORD-0088",
+      "plant": "B",
+      "date": "2026-01-19",
+      "qty": 29
+    },
+    {
+      "order_id": "ORD-0088",
+      "plant": "B",
+      "date": "2026-02-27",
+      "qty": 76
+    },
+    {
+      "order_id": "ORD-0089",
+      "plant": "C",
+      "date": "2026-03-05",
+      "qty": 43
+    },
+    {
+      "order_id": "ORD-0089",
+      "plant": "C",
+      "date": "2026-03-06",
+      "qty": 64
+    },
+    {
+      "order_id": "ORD-0090",
+      "plant": "C",
+      "date": "2026-03-10",
+      "qty": 64
+    },
+    {
+      "order_id": "ORD-0090",
+      "plant": "C",
+      "date": "2026-03-20",
+      "qty": 64
+    },
+    {
+      "order_id": "ORD-0091",
+      "plant": "C",
+      "date": "2026-03-02",
+      "qty": 68
+    },
+    {
+      "order_id": "ORD-0091",
+      "plant": "C",
+      "date": "2026-03-11",
+      "qty": 64
+    },
+    {
+      "order_id": "ORD-0092",
+      "plant": "C",
+      "date": "2026-03-26",
+      "qty": 82
+    },
+    {
+      "order_id": "ORD-0093",
+      "plant": "B",
+      "date": "2026-03-11",
+      "qty": 81
+    },
+    {
+      "order_id": "ORD-0094",
+      "plant": "C",
+      "date": "2026-03-03",
+      "qty": 44
+    },
+    {
+      "order_id": "ORD-0095",
+      "plant": "B",
+      "date": "2026-01-28",
+      "qty": 52
+    },
+    {
+      "order_id": "ORD-0096",
+      "plant": "C",
+      "date": "2026-03-23",
+      "qty": 45
+    },
+    {
+      "order_id": "ORD-0096",
+      "plant": "C",
+      "date": "2026-03-24",
+      "qty": 58
+    },
+    {
+      "order_id": "ORD-0097",
+      "plant": "C",
+      "date": "2026-03-03",
+      "qty": 41
+    },
+    {
+      "order_id": "ORD-0097",
+      "plant": "C",
+      "date": "2026-03-13",
+      "qty": 53
+    },
+    {
+      "order_id": "ORD-0098",
+      "plant": "C",
+      "date": "2026-02-19",
+      "qty": 65
+    },
+    {
+      "order_id": "ORD-0098",
+      "plant": "C",
+      "date": "2026-02-24",
+      "qty": 14
+    },
+    {
+      "order_id": "ORD-0098",
+      "plant": "C",
+      "date": "2026-03-05",
+      "qty": 13
+    },
+    {
+      "order_id": "ORD-0098",
+      "plant": "C",
+      "date": "2026-03-16",
+      "qty": 43
+    },
+    {
+      "order_id": "ORD-0099",
+      "plant": "C",
+      "date": "2026-03-16",
+      "qty": 64
+    },
+    {
+      "order_id": "ORD-0100",
+      "plant": "B",
+      "date": "2026-02-27",
+      "qty": 63
+    },
+    {
+      "order_id": "ORD-0101",
+      "plant": "C",
+      "date": "2026-04-03",
+      "qty": 67
+    },
+    {
+      "order_id": "ORD-0102",
+      "plant": "B",
+      "date": "2026-01-06",
+      "qty": 36
+    },
+    {
+      "order_id": "ORD-0102",
+      "plant": "B",
+      "date": "2026-02-26",
+      "qty": 45
+    },
+    {
+      "order_id": "ORD-0103",
+      "plant": "C",
+      "date": "2026-03-17",
+      "qty": 27
+    },
+    {
+      "order_id": "ORD-0103",
+      "plant": "C",
+      "date": "2026-03-25",
+      "qty": 50
+    },
+    {
+      "order_id": "ORD-0104",
+      "plant": "C",
+      "date": "2026-03-26",
+      "qty": 46
+    },
+    {
+      "order_id": "ORD-0104",
+      "plant": "C",
+      "date": "2026-04-03",
+      "qty": 61
+    },
+    {
+      "order_id": "ORD-0104",
+      "plant": "C",
+      "date": "2026-04-07",
+      "qty": 5
+    },
+    {
+      "order_id": "ORD-0105",
+      "plant": "C",
+      "date": "2026-03-25",
+      "qty": 55
+    },
+    {
+      "order_id": "ORD-0106",
+      "plant": "C",
+      "date": "2026-03-27",
+      "qty": 55
+    },
+    {
+      "order_id": "ORD-0107",
+      "plant": "B",
+      "date": "2026-01-09",
+      "qty": 115
+    },
+    {
+      "order_id": "ORD-0108",
+      "plant": "C",
+      "date": "2026-03-31",
+      "qty": 109
+    },
+    {
+      "order_id": "ORD-0109",
+      "plant": "B",
+      "date": "2026-02-04",
+      "qty": 34
+    },
+    {
+      "order_id": "ORD-0110",
+      "plant": "C",
+      "date": "2026-03-30",
+      "qty": 23
+    },
+    {
+      "order_id": "ORD-0110",
+      "plant": "C",
+      "date": "2026-04-08",
+      "qty": 53
+    },
+    {
+      "order_id": "ORD-0111",
+      "plant": "C",
+      "date": "2026-01-01",
+      "qty": 12
+    },
+    {
+      "order_id": "ORD-0111",
+      "plant": "C",
+      "date": "2026-03-31",
+      "qty": 19
+    },
+    {
+      "order_id": "ORD-0111",
+      "plant": "C",
+      "date": "2026-04-01",
+      "qty": 8
+    },
+    {
+      "order_id": "ORD-0112",
+      "plant": "C",
+      "date": "2026-03-30",
+      "qty": 105
+    },
+    {
+      "order_id": "ORD-0113",
+      "plant": "C",
+      "date": "2026-03-20",
+      "qty": 37
+    },
+    {
+      "order_id": "ORD-0113",
+      "plant": "C",
+      "date": "2026-03-24",
+      "qty": 70
+    },
+    {
+      "order_id": "ORD-0114",
+      "plant": "B",
+      "date": "2026-01-30",
+      "qty": 117
+    },
+    {
+      "order_id": "ORD-0115",
+      "plant": "C",
+      "date": "2026-03-18",
+      "qty": 64
+    },
+    {
+      "order_id": "ORD-0115",
+      "plant": "C",
+      "date": "2026-03-23",
+      "qty": 23
+    },
+    {
+      "order_id": "ORD-0116",
+      "plant": "B",
+      "date": "2026-04-17",
+      "qty": 78
+    },
+    {
+      "order_id": "ORD-0117",
+      "plant": "C",
+      "date": "2026-03-17",
+      "qty": 27
+    },
+    {
+      "order_id": "ORD-0118",
+      "plant": "C",
+      "date": "2026-03-18",
+      "qty": 8
+    },
+    {
+      "order_id": "ORD-0118",
+      "plant": "C",
+      "date": "2026-03-27",
+      "qty": 73
+    },
+    {
+      "order_id": "ORD-0119",
+      "plant": "C",
+      "date": "2026-03-18",
+      "qty": 56
+    },
+    {
+      "order_id": "ORD-0119",
+      "plant": "C",
+      "date": "2026-03-19",
+      "qty": 45
+    },
+    {
+      "order_id": "ORD-0120",
+      "plant": "C",
+      "date": "2026-03-23",
+      "qty": 60
+    },
+    {
+      "order_id": "SCN-001",
+      "plant": "B",
+      "date": "2026-01-01",
+      "qty": 68
+    },
+    {
+      "order_id": "SCN-001",
+      "plant": "B",
+      "date": "2026-01-05",
+      "qty": 52
+    },
+    {
+      "order_id": "SCN-002",
+      "plant": "C",
+      "date": "2026-01-08",
+      "qty": 32
+    },
+    {
+      "order_id": "SCN-002",
+      "plant": "C",
+      "date": "2026-01-09",
+      "qty": 58
+    },
+    {
+      "order_id": "SCN-003",
+      "plant": "C",
+      "date": "2026-01-14",
+      "qty": 54
+    },
+    {
+      "order_id": "SCN-003",
+      "plant": "C",
+      "date": "2026-01-16",
+      "qty": 1
+    },
+    {
+      "order_id": "SCN-004",
+      "plant": "B",
+      "date": "2026-01-02",
+      "qty": 70
+    },
+    {
+      "order_id": "SCN-IMP-001",
+      "plant": "C",
+      "date": "2026-01-01",
+      "qty": 72
+    },
+    {
+      "order_id": "SCN-IMP-001",
+      "plant": "C",
+      "date": "2026-01-02",
+      "qty": 128
+    }
+  ],
+  "unassigned_orders": [],
+  "kpis": {
+    "total_cost": 531087.83992,
+    "currency": "INR",
+    "total_carbon_t": 1.6135344,
+    "late_orders": 0,
+    "total_lateness_days": 0,
+    "unassigned_orders": 0,
+    "unassigned_units": 0,
+    "fulfilled_units": 10677,
+    "plant_utilisation": {
+      "A": 0.0,
+      "B": 0.22989076464746772,
+      "C": 0.7911658653846154
+    },
+    "plant_utilisation_by_week": [
+      {
+        "plant": "A",
+        "week_start": "2025-12-29",
+        "produced_units": 0,
+        "effective_capacity": 340,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-01-05",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-01-12",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-01-19",
+        "produced_units": 0,
+        "effective_capacity": 730,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-01-26",
+        "produced_units": 0,
+        "effective_capacity": 550,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-02-02",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-02-09",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-02-16",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-02-23",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-03-02",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-03-09",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-03-16",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-03-23",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-03-30",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-04-06",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-04-13",
+        "produced_units": 0,
+        "effective_capacity": 850,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-04-20",
+        "produced_units": 0,
+        "effective_capacity": 680,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2025-12-29",
+        "produced_units": 304,
+        "effective_capacity": 304,
+        "utilisation": 1.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-01-05",
+        "produced_units": 431,
+        "effective_capacity": 760,
+        "utilisation": 0.5671052631578948,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-01-12",
+        "produced_units": 611,
+        "effective_capacity": 760,
+        "utilisation": 0.8039473684210526,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-01-19",
+        "produced_units": 237,
+        "effective_capacity": 760,
+        "utilisation": 0.3118421052631579,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-01-26",
+        "produced_units": 297,
+        "effective_capacity": 760,
+        "utilisation": 0.3907894736842105,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-02-02",
+        "produced_units": 286,
+        "effective_capacity": 684,
+        "utilisation": 0.41812865497076024,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-02-09",
+        "produced_units": 130,
+        "effective_capacity": 608,
+        "utilisation": 0.2138157894736842,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-02-16",
+        "produced_units": 0,
+        "effective_capacity": 760,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-02-23",
+        "produced_units": 184,
+        "effective_capacity": 760,
+        "utilisation": 0.24210526315789474,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-03-02",
+        "produced_units": 139,
+        "effective_capacity": 760,
+        "utilisation": 0.18289473684210528,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-03-09",
+        "produced_units": 81,
+        "effective_capacity": 760,
+        "utilisation": 0.10657894736842105,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-03-16",
+        "produced_units": 0,
+        "effective_capacity": 760,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-03-23",
+        "produced_units": 0,
+        "effective_capacity": 760,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-03-30",
+        "produced_units": 0,
+        "effective_capacity": 760,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-04-06",
+        "produced_units": 0,
+        "effective_capacity": 760,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-04-13",
+        "produced_units": 78,
+        "effective_capacity": 760,
+        "utilisation": 0.10263157894736842,
+        "zero_capacity": false
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-04-20",
+        "produced_units": 0,
+        "effective_capacity": 608,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2025-12-29",
+        "produced_units": 256,
+        "effective_capacity": 256,
+        "utilisation": 1.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-01-05",
+        "produced_units": 640,
+        "effective_capacity": 640,
+        "utilisation": 1.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-01-12",
+        "produced_units": 640,
+        "effective_capacity": 640,
+        "utilisation": 1.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-01-19",
+        "produced_units": 640,
+        "effective_capacity": 640,
+        "utilisation": 1.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-01-26",
+        "produced_units": 615,
+        "effective_capacity": 640,
+        "utilisation": 0.9609375,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-02-02",
+        "produced_units": 633,
+        "effective_capacity": 640,
+        "utilisation": 0.9890625,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-02-09",
+        "produced_units": 619,
+        "effective_capacity": 640,
+        "utilisation": 0.9671875,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-02-16",
+        "produced_units": 640,
+        "effective_capacity": 640,
+        "utilisation": 1.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-02-23",
+        "produced_units": 640,
+        "effective_capacity": 640,
+        "utilisation": 1.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-03-02",
+        "produced_units": 448,
+        "effective_capacity": 448,
+        "utilisation": 1.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-03-09",
+        "produced_units": 448,
+        "effective_capacity": 448,
+        "utilisation": 1.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-03-16",
+        "produced_units": 613,
+        "effective_capacity": 640,
+        "utilisation": 0.9578125,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-03-23",
+        "produced_units": 617,
+        "effective_capacity": 640,
+        "utilisation": 0.9640625,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-03-30",
+        "produced_units": 392,
+        "effective_capacity": 640,
+        "utilisation": 0.6125,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-04-06",
+        "produced_units": 58,
+        "effective_capacity": 640,
+        "utilisation": 0.090625,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-04-13",
+        "produced_units": 0,
+        "effective_capacity": 640,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-04-20",
+        "produced_units": 0,
+        "effective_capacity": 512,
+        "utilisation": 0.0,
+        "zero_capacity": false
+      }
+    ]
+  },
+  "weights_used": {
+    "cost": 0.7,
+    "carbon": 0.3,
+    "lateness": 0.0
+  },
+  "normalization_scales": {
+    "cost": 501550.62334999995,
+    "carbon": 1613.5343999999998,
+    "lateness": 14125.0
+  },
+  "validator": {
+    "applicable": true,
+    "valid": true,
+    "capacity_ok": true,
+    "eligibility_ok": true,
+    "production_balance_ok": true,
+    "delivery_ok": true,
+    "violations": [],
+    "recomputed_kpis": {
+      "total_cost": 531087.83992,
+      "total_carbon_t": 1.6135343999999998,
+      "late_orders": 0,
+      "total_lateness_days": 0,
+      "fulfilled_units": 10677,
+      "unassigned_orders": 0,
+      "unassigned_units": 0
+    }
+  },
+  "recommendations": [
+    {
+      "action": "Review the proposed allocation.",
+      "rationale": "The independent checker verified capacity, eligibility, quantities and reported arithmetic.",
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:optimizer:validator",
+        "config:6ede1e28b20cf57d1e7a"
+      ],
+      "confidence": "medium",
+      "estimated_impact": {
+        "kind": "plan_total",
+        "cost": 531087.83992,
+        "currency": "INR",
+        "carbon_t": 1.6135344
+      },
+      "requires_approval": true
+    }
+  ],
+  "assumptions": [
+    "Duty and capacity_loss_pct are fractions: 0.30 means 30%, matching the existing loader.",
+    "One plant per order; all orders available at planning start; production may span days.",
+    "Shared plant capacity distributed equally across working days and rounded down.",
+    "Duty applies to production plus energy; transport uses calendar days.",
+    "Prices and weekly overrides are explicit configuration, not inferred from CSV.",
+    "Overlapping events use the largest active loss; early inventory has no holding cost.",
+    "Equal order priority; no execution/WIP state is supplied."
+  ],
+  "limitations": [
+    "Coarse daily production model; no setups, machine routing or inventory cost.",
+    "Feasibility is scoped to the configured finite horizon.",
+    "Normalization uses fixed candidate estimates, not a proven feasible reference optimum."
+  ],
+  "warnings": [
+    "Plant A shared capacity explicitly configured as 850 units/week; CSV row values=[850, 865].",
+    "Plant B shared capacity explicitly configured as 760 units/week; CSV row values=[760, 775].",
+    "Plant C shared capacity explicitly configured as 640 units/week; CSV row values=[640, 655]."
+  ],
+  "trace": [
+    {
+      "tool": "cbc_solve",
+      "output": {
+        "stage": "strict",
+        "status": "optimal",
+        "optimality_proven": true,
+        "termination_reason": "optimality_proven",
+        "solve_seconds": 2.5450744719992144,
+        "stage_objective": 1.0412242566082337,
+        "pulp_status": "Optimal",
+        "pulp_solution_status": "Optimal Solution Found",
+        "log_summary": [
+          "Result - Optimal solution found",
+          "Objective value:                1.04122426",
+          "Enumerated nodes:               0",
+          "Time (Wallclock seconds):       1.87"
+        ],
+        "best_bound": null,
+        "relative_gap": null
+      }
+    }
+  ],
+  "problem_context": {
+    "resolved_config": {
+      "planning_start": "2026-01-01",
+      "horizon_days": 113,
+      "currency": "INR",
+      "production_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "energy_price_per_kwh": {
+        "A": 8.0,
+        "B": 6.0,
+        "C": 7.0
+      },
+      "plant_weekly_capacity": {
+        "A": 850,
+        "B": 760,
+        "C": 640
+      },
+      "weekly_carbon_overrides": [],
+      "weekly_energy_price_overrides": [],
+      "percentage_convention": "fraction_0_1",
+      "duty_basis": "production_plus_energy",
+      "overlap_policy": "maximum_active_loss",
+      "cost_scale": null,
+      "carbon_scale": null
+    },
+    "allocation_input_hash": "bf755fc8f40d99db9bad",
+    "capacity_events": [
+      {
+        "event_id": "EV-001",
+        "plant": "A",
+        "from_date": "2026-01-22",
+        "to_date": "2026-01-31",
+        "capacity_loss_pct": 0.35
+      },
+      {
+        "event_id": "EV-002",
+        "plant": "B",
+        "from_date": "2026-02-05",
+        "to_date": "2026-02-12",
+        "capacity_loss_pct": 0.25
+      },
+      {
+        "event_id": "EV-003",
+        "plant": "C",
+        "from_date": "2026-03-04",
+        "to_date": "2026-03-11",
+        "capacity_loss_pct": 0.5
+      }
+    ],
+    "carbon_budget_kg": null,
+    "forced_assignments": {}
+  }
+}

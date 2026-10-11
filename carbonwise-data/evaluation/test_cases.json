@@ -1,0 +1,446 @@
+[
+  {
+    "name": "test_hand_calculated_cost_and_carbon",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.059,
+    "passed": true
+  },
+  {
+    "name": "test_joint_allocation_optimum_beats_greedy",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.05,
+    "passed": true
+  },
+  {
+    "name": "test_weight_settings[weight0-A]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.046,
+    "passed": true
+  },
+  {
+    "name": "test_weight_settings[weight1-B]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.045,
+    "passed": true
+  },
+  {
+    "name": "test_weight_settings[weight2-C]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.044,
+    "passed": true
+  },
+  {
+    "name": "test_cheapest_route_late[2]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.078,
+    "passed": true
+  },
+  {
+    "name": "test_cheapest_route_late[4]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.084,
+    "passed": true
+  },
+  {
+    "name": "test_cheapest_route_late[20]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.078,
+    "passed": true
+  },
+  {
+    "name": "test_ineligible_plant_not_selected",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.081,
+    "passed": true
+  },
+  {
+    "name": "test_unsupported_product_becomes_infeasible_not_fake_assignment",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.057,
+    "passed": true
+  },
+  {
+    "name": "test_due_boundary_and_production_before_dispatch",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.049,
+    "passed": true
+  },
+  {
+    "name": "test_multi_day_order_is_not_forced_into_one_day",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.045,
+    "passed": true
+  },
+  {
+    "name": "test_shared_capacity_not_multiplied_by_products",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.099,
+    "passed": true
+  },
+  {
+    "name": "test_inconsistent_capacities_require_explicit_config",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.152,
+    "passed": true
+  },
+  {
+    "name": "test_two_week_capacity_loss[0.3-700]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.041,
+    "passed": true
+  },
+  {
+    "name": "test_two_week_capacity_loss[0.5-500]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.049,
+    "passed": true
+  },
+  {
+    "name": "test_two_week_capacity_loss[1.0-0]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.046,
+    "passed": true
+  },
+  {
+    "name": "test_partial_week_and_overlap",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.044,
+    "passed": true
+  },
+  {
+    "name": "test_shutdown_and_zero_utilization_denominator",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.064,
+    "passed": true
+  },
+  {
+    "name": "test_carbon_target_enforced",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.053,
+    "passed": true
+  },
+  {
+    "name": "test_impossible_carbon_target_does_not_drop_orders",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.05,
+    "passed": true
+  },
+  {
+    "name": "test_weekly_carbon_uses_actual_production_date",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.048,
+    "passed": true
+  },
+  {
+    "name": "test_immutable_baseline_replan_and_event_deduplication",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.108,
+    "passed": true
+  },
+  {
+    "name": "test_conflicting_duplicate_event_rejected",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.037,
+    "passed": true
+  },
+  {
+    "name": "test_comparison_marks_reduced_fulfillment",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.094,
+    "passed": true
+  },
+  {
+    "name": "test_invalid_weights[weights0]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.0,
+    "passed": true
+  },
+  {
+    "name": "test_invalid_weights[weights1]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.0,
+    "passed": true
+  },
+  {
+    "name": "test_invalid_weights[weights2]",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.0,
+    "passed": true
+  },
+  {
+    "name": "test_lateness_only_rejected",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.037,
+    "passed": true
+  },
+  {
+    "name": "test_missing_energy_price_and_fraction_scale",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.036,
+    "passed": true
+  },
+  {
+    "name": "test_checker_catches_tampering",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.045,
+    "passed": true
+  },
+  {
+    "name": "test_permutation_invariance",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.088,
+    "passed": true
+  },
+  {
+    "name": "test_json_contract_serializable",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.046,
+    "passed": true
+  },
+  {
+    "name": "test_tradeoff_points_and_explanations",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.068,
+    "passed": true
+  },
+  {
+    "name": "test_unknown_explanation_and_stale_baseline",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.044,
+    "passed": true
+  },
+  {
+    "name": "test_timeout_status_is_not_infeasibility",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.041,
+    "passed": true
+  },
+  {
+    "name": "test_feasible_incumbent_is_not_optimal",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.052,
+    "passed": true
+  },
+  {
+    "name": "test_solver_unavailable",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.05,
+    "passed": true
+  },
+  {
+    "name": "test_existing_sqlite_version_integration",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 3.584,
+    "passed": true
+  },
+  {
+    "name": "test_duty_can_reverse_cheapest_choice",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.076,
+    "passed": true
+  },
+  {
+    "name": "test_diagnostic_preserves_capacity_and_flags_late",
+    "class": "tests.optimization.test_optimizer",
+    "seconds": 0.055,
+    "passed": true
+  },
+  {
+    "name": "test_exact_answer_fixture_matches_expected_result",
+    "class": "tests.test_exact_answer",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "test_successful_ingestion_persists_and_reloads_dataframes",
+    "class": "tests.test_ingestion_repository",
+    "seconds": 0.068,
+    "passed": true
+  },
+  {
+    "name": "test_reingestion_creates_isolated_immutable_versions",
+    "class": "tests.test_ingestion_repository",
+    "seconds": 0.139,
+    "passed": true
+  },
+  {
+    "name": "test_database_write_failure_rolls_back_all_input_rows_and_logs_failure",
+    "class": "tests.test_ingestion_repository",
+    "seconds": 0.06,
+    "passed": true
+  },
+  {
+    "name": "test_validation_failure_is_persisted_as_rejected_with_errors",
+    "class": "tests.test_ingestion_repository",
+    "seconds": 0.049,
+    "passed": true
+  },
+  {
+    "name": "test_single_table_ingestion_is_partial_and_not_solver_ready",
+    "class": "tests.test_ingestion_repository",
+    "seconds": 0.018,
+    "passed": true
+  },
+  {
+    "name": "test_unknown_table_and_invalid_input_type_are_rejected",
+    "class": "tests.test_ingestion_repository",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "test_warning_logs_are_persisted_with_accepted_version",
+    "class": "tests.test_ingestion_repository",
+    "seconds": 0.017,
+    "passed": true
+  },
+  {
+    "name": "test_csv_loading_and_missing_file",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.002,
+    "passed": true
+  },
+  {
+    "name": "test_csv_duplicate_headers_are_rejected",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "test_column_whitespace_is_trimmed",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.0,
+    "passed": true
+  },
+  {
+    "name": "test_normalization_collision_is_rejected",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.0,
+    "passed": true
+  },
+  {
+    "name": "test_load_dataset_requires_all_four_csvs",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "test_missing_required_column_is_reported",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "test_invalid_order_numeric_values_are_rejected[qty-not-a-number]",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.002,
+    "passed": true
+  },
+  {
+    "name": "test_invalid_order_numeric_values_are_rejected[qty-2.5]",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.003,
+    "passed": true
+  },
+  {
+    "name": "test_invalid_date_is_reported",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.005,
+    "passed": true
+  },
+  {
+    "name": "test_non_iso_date_is_rejected",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.005,
+    "passed": true
+  },
+  {
+    "name": "test_duplicate_identifiers_are_rejected",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.01,
+    "passed": true
+  },
+  {
+    "name": "test_non_positive_quantity_or_invalid_capacity_cost_rejected[orders-qty-0]",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.007,
+    "passed": true
+  },
+  {
+    "name": "test_non_positive_quantity_or_invalid_capacity_cost_rejected[plants-weekly_capacity-0]",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.008,
+    "passed": true
+  },
+  {
+    "name": "test_non_positive_quantity_or_invalid_capacity_cost_rejected[plants-unit_cost--1.0]",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.008,
+    "passed": true
+  },
+  {
+    "name": "test_invalid_duty_percentage_is_rejected",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.008,
+    "passed": true
+  },
+  {
+    "name": "test_unknown_plant_reference_is_rejected",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.029,
+    "passed": true
+  },
+  {
+    "name": "test_missing_plant_destination_route_is_rejected",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.026,
+    "passed": true
+  },
+  {
+    "name": "test_product_without_eligible_plant_is_a_reported_warning",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.027,
+    "passed": true
+  },
+  {
+    "name": "test_invalid_capacity_event_date_range_is_rejected",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.007,
+    "passed": true
+  },
+  {
+    "name": "test_extra_columns_are_accepted_with_warning_and_omitted",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.008,
+    "passed": true
+  },
+  {
+    "name": "test_planning_start_is_optional_but_enforced_when_given",
+    "class": "tests.test_ingestion_validation",
+    "seconds": 0.051,
+    "passed": true
+  },
+  {
+    "name": "test_referential_integrity_for_main_dataset",
+    "class": "tests.test_referential_integrity",
+    "seconds": 0.003,
+    "passed": true
+  },
+  {
+    "name": "test_reproducible_generation",
+    "class": "tests.test_reproducibility",
+    "seconds": 0.004,
+    "passed": true
+  },
+  {
+    "name": "test_required_scenarios_present",
+    "class": "tests.test_required_scenarios",
+    "seconds": 0.002,
+    "passed": true
+  },
+  {
+    "name": "test_main_schema_matches_contract",
+    "class": "tests.test_schema",
+    "seconds": 0.003,
+    "passed": true
+  }
+]

@@ -1,0 +1,10 @@
+services:
+  optimizer:
+    build:
+      context: .
+      dockerfile: Dockerfile.optimizer
+    volumes:
+      - optimizer-data:/app/data
+volumes:
+  optimizer-data:
+
