@@ -1,0 +1,21 @@
+{
+  "cost_only": {
+    "EX-01": "A",
+    "EX-02": "A",
+    "EX-03": "B",
+    "EX-04": "B"
+  },
+  "carbon_only": {
+    "EX-01": "A",
+    "EX-02": "C",
+    "EX-03": "B",
+    "EX-04": "C"
+  },
+  "default_weight": {
+    "EX-01": "A",
+    "EX-02": "A",
+    "EX-03": "B",
+    "EX-04": "B"
+  },
+  "notes": "Feasible assignments used for the exact-answer test fixture."
+}

@@ -1,0 +1,83 @@
+{
+  "source": "Annex B fixed schema from the CarbonWise Allocator participant guide",
+  "schema": {
+    "orders": {
+      "filename": "orders.csv",
+      "columns": [
+        "order_id",
+        "product",
+        "qty",
+        "destination",
+        "due"
+      ],
+      "dtypes": {
+        "order_id": "string",
+        "product": "string",
+        "qty": "int",
+        "destination": "string",
+        "due": "date"
+      }
+    },
+    "plants": {
+      "filename": "plants.csv",
+      "columns": [
+        "plant",
+        "product",
+        "weekly_capacity",
+        "unit_cost",
+        "energy_kwh_per_unit",
+        "carbon_kg_per_kwh"
+      ],
+      "dtypes": {
+        "plant": "string",
+        "product": "string",
+        "weekly_capacity": "int",
+        "unit_cost": "float",
+        "energy_kwh_per_unit": "float",
+        "carbon_kg_per_kwh": "float"
+      }
+    },
+    "transport_duties": {
+      "filename": "transport_duties.csv",
+      "columns": [
+        "plant",
+        "destination",
+        "transport_cost_per_unit",
+        "transit_days",
+        "duty_pct",
+        "carbon_kg_per_unit"
+      ],
+      "dtypes": {
+        "plant": "string",
+        "destination": "string",
+        "transport_cost_per_unit": "float",
+        "transit_days": "int",
+        "duty_pct": "float",
+        "carbon_kg_per_unit": "float"
+      }
+    },
+    "capacity_events": {
+      "filename": "capacity_events.csv",
+      "columns": [
+        "event_id",
+        "plant",
+        "from_date",
+        "to_date",
+        "capacity_loss_pct"
+      ],
+      "dtypes": {
+        "event_id": "string",
+        "plant": "string",
+        "from_date": "date",
+        "to_date": "date",
+        "capacity_loss_pct": "float"
+      }
+    }
+  },
+  "generated_files": {
+    "orders": "C:\\Users\\max03\\Downloads\\Data Implementation\\carbonwise-data\\synthetic_data\\main\\orders.csv",
+    "plants": "C:\\Users\\max03\\Downloads\\Data Implementation\\carbonwise-data\\synthetic_data\\main\\plants.csv",
+    "transport_duties": "C:\\Users\\max03\\Downloads\\Data Implementation\\carbonwise-data\\synthetic_data\\main\\transport_duties.csv",
+    "capacity_events": "C:\\Users\\max03\\Downloads\\Data Implementation\\carbonwise-data\\synthetic_data\\main\\capacity_events.csv"
+  }
+}
