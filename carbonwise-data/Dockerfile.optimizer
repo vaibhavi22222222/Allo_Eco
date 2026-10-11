@@ -1,0 +1,8 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt requirements-optimizer.txt ./
+RUN pip install --no-cache-dir -r requirements-optimizer.txt
+COPY . .
+RUN python -c "from optimization import solver_available; assert solver_available(), 'CBC unavailable'"
+CMD ["python", "scripts/run_optimizer.py"]
+

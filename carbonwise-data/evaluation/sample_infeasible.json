@@ -1,0 +1,2057 @@
+{
+  "schema_version": "vibhu-optimizer-1",
+  "dataset_version_id": "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67",
+  "data_hash": "cf0639083b9fc5708bbd",
+  "config_version": "6ede1e28b20cf57d1e7a",
+  "scenario_hash": "52ee1590d8a17a4c2865",
+  "planning_window": {
+    "start": "2026-01-01",
+    "end": "2026-04-23"
+  },
+  "solver": {
+    "status": "optimal",
+    "termination_reason": "optimality_proven",
+    "has_feasible_solution": true,
+    "optimality_proven": true,
+    "solve_seconds": 0.17809766600021248,
+    "best_bound": null,
+    "relative_gap": null,
+    "stage": "weighted_alternative",
+    "stage_objective": 0.0,
+    "pulp_status": "Optimal",
+    "pulp_solution_status": "Optimal Solution Found",
+    "log_summary": [
+      "Result - Optimal solution found",
+      "Objective value:                0.00000000",
+      "Enumerated nodes:               0",
+      "Time (Wallclock seconds):       0.00"
+    ],
+    "strict_solver_status": "infeasible",
+    "alternative_solver_status": "optimal",
+    "optimization_scope": "diagnostic_alternative",
+    "objective_value": 0.0
+  },
+  "answer_type": "infeasible",
+  "alternative": true,
+  "original_request_met": false,
+  "allocation": [],
+  "production_schedule": [],
+  "unassigned_orders": [
+    {
+      "order_id": "ORD-0001",
+      "qty": 35,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0002",
+      "qty": 100,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0003",
+      "qty": 74,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0004",
+      "qty": 34,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0005",
+      "qty": 48,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0006",
+      "qty": 85,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0007",
+      "qty": 109,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0008",
+      "qty": 107,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0009",
+      "qty": 84,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0010",
+      "qty": 121,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0011",
+      "qty": 82,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0012",
+      "qty": 45,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0013",
+      "qty": 114,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0014",
+      "qty": 71,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0015",
+      "qty": 87,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0016",
+      "qty": 76,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0017",
+      "qty": 35,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0018",
+      "qty": 127,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0019",
+      "qty": 123,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0020",
+      "qty": 56,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0021",
+      "qty": 44,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0022",
+      "qty": 105,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0023",
+      "qty": 32,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0024",
+      "qty": 76,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0025",
+      "qty": 102,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0026",
+      "qty": 112,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0027",
+      "qty": 66,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0028",
+      "qty": 82,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0029",
+      "qty": 87,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0030",
+      "qty": 110,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0031",
+      "qty": 131,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0032",
+      "qty": 67,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0033",
+      "qty": 72,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0034",
+      "qty": 129,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0035",
+      "qty": 33,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0036",
+      "qty": 116,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0037",
+      "qty": 78,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0038",
+      "qty": 103,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0039",
+      "qty": 62,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0040",
+      "qty": 89,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0041",
+      "qty": 133,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0042",
+      "qty": 43,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0043",
+      "qty": 97,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0044",
+      "qty": 36,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0045",
+      "qty": 113,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0046",
+      "qty": 75,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0047",
+      "qty": 121,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0048",
+      "qty": 128,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0049",
+      "qty": 52,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0050",
+      "qty": 98,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0051",
+      "qty": 120,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0052",
+      "qty": 117,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0053",
+      "qty": 116,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0054",
+      "qty": 114,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0055",
+      "qty": 79,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0056",
+      "qty": 56,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0057",
+      "qty": 88,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0058",
+      "qty": 83,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0059",
+      "qty": 29,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0060",
+      "qty": 53,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0061",
+      "qty": 75,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0062",
+      "qty": 100,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0063",
+      "qty": 123,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0064",
+      "qty": 34,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0065",
+      "qty": 91,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0066",
+      "qty": 90,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0067",
+      "qty": 35,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0068",
+      "qty": 116,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0069",
+      "qty": 94,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0070",
+      "qty": 64,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0071",
+      "qty": 138,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0072",
+      "qty": 56,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0073",
+      "qty": 139,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0074",
+      "qty": 28,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0075",
+      "qty": 119,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0076",
+      "qty": 123,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0077",
+      "qty": 130,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0078",
+      "qty": 74,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0079",
+      "qty": 39,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0080",
+      "qty": 83,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0081",
+      "qty": 139,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0082",
+      "qty": 72,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0083",
+      "qty": 73,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0084",
+      "qty": 61,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0085",
+      "qty": 63,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0086",
+      "qty": 37,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0087",
+      "qty": 113,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0088",
+      "qty": 105,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0089",
+      "qty": 107,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0090",
+      "qty": 128,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0091",
+      "qty": 132,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0092",
+      "qty": 82,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0093",
+      "qty": 81,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0094",
+      "qty": 44,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0095",
+      "qty": 52,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0096",
+      "qty": 103,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0097",
+      "qty": 94,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0098",
+      "qty": 135,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0099",
+      "qty": 64,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0100",
+      "qty": 63,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0101",
+      "qty": 67,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0102",
+      "qty": 81,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0103",
+      "qty": 77,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0104",
+      "qty": 112,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0105",
+      "qty": 55,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0106",
+      "qty": 55,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0107",
+      "qty": 115,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0108",
+      "qty": 109,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0109",
+      "qty": 34,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0110",
+      "qty": 76,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0111",
+      "qty": 39,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0112",
+      "qty": 105,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0113",
+      "qty": 107,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0114",
+      "qty": 117,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0115",
+      "qty": 87,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0116",
+      "qty": 78,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0117",
+      "qty": 27,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0118",
+      "qty": 81,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0119",
+      "qty": 101,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "ORD-0120",
+      "qty": 60,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "SCN-001",
+      "qty": 120,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "SCN-002",
+      "qty": 90,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "SCN-003",
+      "qty": 55,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "SCN-004",
+      "qty": 70,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    },
+    {
+      "order_id": "SCN-IMP-001",
+      "qty": 200,
+      "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+      "scope": "configured production horizon"
+    }
+  ],
+  "kpis": {
+    "total_cost": 0,
+    "currency": "INR",
+    "total_carbon_t": 0.0,
+    "late_orders": 0,
+    "total_lateness_days": 0,
+    "unassigned_orders": 125,
+    "unassigned_units": 10677,
+    "fulfilled_units": 0,
+    "plant_utilisation": {
+      "A": null,
+      "B": null,
+      "C": null
+    },
+    "plant_utilisation_by_week": [
+      {
+        "plant": "A",
+        "week_start": "2025-12-29",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-01-05",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-01-12",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-01-19",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-01-26",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-02-02",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-02-09",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-02-16",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-02-23",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-03-02",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-03-09",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-03-16",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-03-23",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-03-30",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-04-06",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-04-13",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "A",
+        "week_start": "2026-04-20",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2025-12-29",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-01-05",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-01-12",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-01-19",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-01-26",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-02-02",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-02-09",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-02-16",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-02-23",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-03-02",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-03-09",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-03-16",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-03-23",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-03-30",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-04-06",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-04-13",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "B",
+        "week_start": "2026-04-20",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2025-12-29",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-01-05",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-01-12",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-01-19",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-01-26",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-02-02",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-02-09",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-02-16",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-02-23",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-03-02",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-03-09",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-03-16",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-03-23",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-03-30",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-04-06",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-04-13",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      },
+      {
+        "plant": "C",
+        "week_start": "2026-04-20",
+        "produced_units": 0,
+        "effective_capacity": 0,
+        "utilisation": null,
+        "zero_capacity": true
+      }
+    ]
+  },
+  "weights_used": {
+    "cost": 0.7,
+    "carbon": 0.3,
+    "lateness": 0.0
+  },
+  "normalization_scales": {
+    "cost": 501550.62334999995,
+    "carbon": 1613.5343999999998,
+    "lateness": 14125.0
+  },
+  "validator": {
+    "applicable": true,
+    "valid": true,
+    "capacity_ok": true,
+    "eligibility_ok": true,
+    "production_balance_ok": true,
+    "delivery_ok": false,
+    "violations": [],
+    "recomputed_kpis": {
+      "total_cost": 0.0,
+      "total_carbon_t": 0.0,
+      "late_orders": 0,
+      "total_lateness_days": 0,
+      "fulfilled_units": 0,
+      "unassigned_orders": 125,
+      "unassigned_units": 10677
+    }
+  },
+  "recommendations": [
+    {
+      "action": "Review unmet commitments and the closest computed alternative.",
+      "rationale": "The independent checker verified capacity, eligibility, quantities and reported arithmetic.",
+      "evidence_refs": [
+        "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:optimizer:validator",
+        "config:6ede1e28b20cf57d1e7a"
+      ],
+      "confidence": "medium",
+      "estimated_impact": {
+        "kind": "plan_total",
+        "cost": 0,
+        "currency": "INR",
+        "carbon_t": 0.0
+      },
+      "requires_approval": true
+    }
+  ],
+  "assumptions": [
+    "Duty and capacity_loss_pct are fractions: 0.30 means 30%, matching the existing loader.",
+    "One plant per order; all orders available at planning start; production may span days.",
+    "Shared plant capacity distributed equally across working days and rounded down.",
+    "Duty applies to production plus energy; transport uses calendar days.",
+    "Prices and weekly overrides are explicit configuration, not inferred from CSV.",
+    "Overlapping events use the largest active loss; early inventory has no holding cost.",
+    "Equal order priority; no execution/WIP state is supplied."
+  ],
+  "limitations": [
+    "Coarse daily production model; no setups, machine routing or inventory cost.",
+    "Feasibility is scoped to the configured finite horizon.",
+    "Normalization uses fixed candidate estimates, not a proven feasible reference optimum."
+  ],
+  "warnings": [
+    "Plant A shared capacity explicitly configured as 850 units/week; CSV row values=[850, 865].",
+    "Plant B shared capacity explicitly configured as 760 units/week; CSV row values=[760, 775].",
+    "Plant C shared capacity explicitly configured as 640 units/week; CSV row values=[640, 655]."
+  ],
+  "trace": [
+    {
+      "tool": "strict_presolve",
+      "output": {
+        "status": "infeasible",
+        "findings": [
+          {
+            "order_id": "ORD-0001",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0002",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0003",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0004",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0005",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0006",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0007",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0008",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0009",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0010",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0011",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0012",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0013",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0014",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0015",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0016",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0017",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0018",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0019",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0020",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0021",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0022",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0023",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0024",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0025",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0026",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0027",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0028",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0029",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0030",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0031",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0032",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0033",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0034",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0035",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0036",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0037",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0038",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0039",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0040",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0041",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0042",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0043",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0044",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0045",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0046",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0047",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0048",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0049",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0050",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0051",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0052",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0053",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0054",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0055",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0056",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0057",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0058",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0059",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0060",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0061",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0062",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0063",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0064",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0065",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0066",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0067",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0068",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0069",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0070",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0071",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0072",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0073",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0074",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0075",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0076",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0077",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0078",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0079",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0080",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0081",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0082",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0083",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0084",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0085",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0086",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0087",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0088",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0089",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0090",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0091",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0092",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0093",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0094",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0095",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0096",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0097",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0098",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0099",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0100",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0101",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0102",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0103",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0104",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0105",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0106",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0107",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0108",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0109",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0110",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0111",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0112",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0113",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0114",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0115",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0116",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0117",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0118",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0119",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "ORD-0120",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "SCN-001",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "SCN-002",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "SCN-003",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "SCN-004",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          },
+          {
+            "order_id": "SCN-IMP-001",
+            "reason": "NO_ELIGIBLE_ON_TIME_CAPACITY",
+            "scope": "each eligible plant checked in isolation within planning horizon"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "cbc_solve",
+      "output": {
+        "stage": "minimize_missed",
+        "status": "optimal",
+        "optimality_proven": true,
+        "termination_reason": "optimality_proven",
+        "solve_seconds": 0.007245169000270835,
+        "stage_objective": 125.0,
+        "pulp_status": "Optimal",
+        "pulp_solution_status": "Optimal Solution Found",
+        "log_summary": [
+          "Result - Optimal solution found",
+          "Objective value:                125.00000000",
+          "Enumerated nodes:               0",
+          "Time (Wallclock seconds):       0.00"
+        ],
+        "best_bound": null,
+        "relative_gap": null
+      }
+    },
+    {
+      "tool": "cbc_solve",
+      "output": {
+        "stage": "minimize_unassigned",
+        "status": "optimal",
+        "optimality_proven": true,
+        "termination_reason": "optimality_proven",
+        "solve_seconds": 0.006116057000326691,
+        "stage_objective": 125.0,
+        "pulp_status": "Optimal",
+        "pulp_solution_status": "Optimal Solution Found",
+        "log_summary": [
+          "Result - Optimal solution found",
+          "Objective value:                125.00000000",
+          "Enumerated nodes:               0",
+          "Time (Wallclock seconds):       0.00"
+        ],
+        "best_bound": null,
+        "relative_gap": null
+      }
+    },
+    {
+      "tool": "cbc_solve",
+      "output": {
+        "stage": "weighted_alternative",
+        "status": "optimal",
+        "optimality_proven": true,
+        "termination_reason": "optimality_proven",
+        "solve_seconds": 0.008075980000285199,
+        "stage_objective": 0.0,
+        "pulp_status": "Optimal",
+        "pulp_solution_status": "Optimal Solution Found",
+        "log_summary": [
+          "Result - Optimal solution found",
+          "Objective value:                0.00000000",
+          "Enumerated nodes:               0",
+          "Time (Wallclock seconds):       0.00"
+        ],
+        "best_bound": null,
+        "relative_gap": null
+      }
+    }
+  ],
+  "problem_context": {
+    "resolved_config": {
+      "planning_start": "2026-01-01",
+      "horizon_days": 113,
+      "currency": "INR",
+      "production_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "energy_price_per_kwh": {
+        "A": 8.0,
+        "B": 6.0,
+        "C": 7.0
+      },
+      "plant_weekly_capacity": {
+        "A": 850,
+        "B": 760,
+        "C": 640
+      },
+      "weekly_carbon_overrides": [],
+      "weekly_energy_price_overrides": [],
+      "percentage_convention": "fraction_0_1",
+      "duty_basis": "production_plus_energy",
+      "overlap_policy": "maximum_active_loss",
+      "cost_scale": null,
+      "carbon_scale": null
+    },
+    "allocation_input_hash": "bf755fc8f40d99db9bad",
+    "capacity_events": [
+      {
+        "event_id": "EV-001",
+        "plant": "A",
+        "from_date": "2026-01-22",
+        "to_date": "2026-01-31",
+        "capacity_loss_pct": 0.35
+      },
+      {
+        "event_id": "EV-002",
+        "plant": "B",
+        "from_date": "2026-02-05",
+        "to_date": "2026-02-12",
+        "capacity_loss_pct": 0.25
+      },
+      {
+        "event_id": "EV-003",
+        "plant": "C",
+        "from_date": "2026-03-04",
+        "to_date": "2026-03-11",
+        "capacity_loss_pct": 0.5
+      },
+      {
+        "event_id": "EVAL-SHUTDOWN-A",
+        "plant": "A",
+        "from_date": "2026-01-01",
+        "to_date": "2026-04-23",
+        "capacity_loss_pct": 1.0
+      },
+      {
+        "event_id": "EVAL-SHUTDOWN-B",
+        "plant": "B",
+        "from_date": "2026-01-01",
+        "to_date": "2026-04-23",
+        "capacity_loss_pct": 1.0
+      },
+      {
+        "event_id": "EVAL-SHUTDOWN-C",
+        "plant": "C",
+        "from_date": "2026-01-01",
+        "to_date": "2026-04-23",
+        "capacity_loss_pct": 1.0
+      }
+    ],
+    "carbon_budget_kg": null,
+    "forced_assignments": {}
+  }
+}
