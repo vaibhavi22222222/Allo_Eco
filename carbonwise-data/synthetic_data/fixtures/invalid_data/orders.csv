@@ -1,0 +1,5 @@
+order_id,product,qty,destination,due
+BAD-001,P1,-5,D1,2026-01-20
+BAD-001,P1,10,D1,2026-01-20
+BAD-002,P9,20,D9,2026-01-22
+BAD-003,P3,15,D99,2026-01-25

@@ -1,0 +1,679 @@
+{
+ "_note": "Trimmed REAL outputs of Vibhu's optimizer (synthetic_data/main, config/optimizer.yaml). Lists truncated to 3 rows; KPI values untouched. 'infeasible_sample' = carbonwise-data/evaluation/sample_infeasible.json trimmed.",
+ "allocation": {
+  "schema_version": "vibhu-optimizer-1",
+  "dataset_version_id": "inspect",
+  "data_hash": "cf0639083b9fc5708bbd",
+  "config_version": "6ede1e28b20cf57d1e7a",
+  "scenario_hash": "d437d253872cf9ce1d82",
+  "planning_window": {
+   "start": "2026-01-01",
+   "end": "2026-04-23"
+  },
+  "solver": {
+   "status": "optimal",
+   "termination_reason": "optimality_proven",
+   "has_feasible_solution": true,
+   "optimality_proven": true,
+   "solve_seconds": 1.674901251000847,
+   "best_bound": null,
+   "relative_gap": null,
+   "stage": "strict",
+   "stage_objective": 1.0412242566082328,
+   "pulp_status": "Optimal",
+   "pulp_solution_status": "Optimal Solution Found",
+   "log_summary": [
+    "Result - Optimal solution found",
+    "Objective value:                1.04122426",
+    "Enumerated nodes:               0",
+    "Time (Wallclock seconds):       0.93"
+   ],
+   "strict_solver_status": "optimal",
+   "objective_value": 1.0412242566082337
+  },
+  "answer_type": "allocation",
+  "alternative": false,
+  "original_request_met": true,
+  "allocation": [
+   {
+    "order_id": "ORD-0001",
+    "plant": "C",
+    "qty": 35,
+    "dispatch": "2026-01-19",
+    "arrival": "2026-01-23",
+    "on_time": true,
+    "late_days": 0,
+    "cost": 1674.232,
+    "carbon_kg": 3.794,
+    "cost_breakdown": {
+     "production": 770.0,
+     "energy": 215.6,
+     "transport": 595.0,
+     "duty": 93.632
+    },
+    "evidence_refs": [
+     "inspect:orders:ORD-0001",
+     "inspect:plants:C:P1",
+     "config:6ede1e28b20cf57d1e7a"
+    ]
+   },
+   {
+    "order_id": "ORD-0002",
+    "plant": "B",
+    "qty": 100,
+    "dispatch": "2026-01-12",
+    "arrival": "2026-01-16",
+    "on_time": true,
+    "late_days": 0,
+    "cost": 4676.254,
+    "carbon_kg": 27.26,
+    "cost_breakdown": {
+     "production": 1950.0,
+     "energy": 732.0,
+     "transport": 1600.0,
+     "duty": 394.25399999999996
+    },
+    "evidence_refs": [
+     "inspect:orders:ORD-0002",
+     "inspect:plants:B:P2",
+     "config:6ede1e28b20cf57d1e7a"
+    ]
+   },
+   {
+    "order_id": "ORD-0003",
+    "plant": "C",
+    "qty": 74,
+    "dispatch": "2026-01-14",
+    "arrival": "2026-01-20",
+    "on_time": true,
+    "late_days": 0,
+    "cost": 4319.39776,
+    "carbon_kg": 8.021600000000001,
+    "cost_breakdown": {
+     "production": 1628.0,
+     "energy": 455.84000000000003,
+     "transport": 1998.0,
+     "duty": 237.55776000000003
+    },
+    "evidence_refs": [
+     "inspect:orders:ORD-0003",
+     "inspect:plants:C:P3",
+     "config:6ede1e28b20cf57d1e7a"
+    ]
+   }
+  ],
+  "production_schedule": [],
+  "unassigned_orders": [],
+  "kpis": {
+   "total_cost": 531087.83992,
+   "currency": "INR",
+   "total_carbon_t": 1.6135343999999998,
+   "late_orders": 0,
+   "total_lateness_days": 0,
+   "unassigned_orders": 0,
+   "unassigned_units": 0,
+   "fulfilled_units": 10677,
+   "plant_utilisation": {
+    "A": 0.0,
+    "B": 0.22989076464746772,
+    "C": 0.7911658653846154
+   },
+   "plant_utilisation_by_week": []
+  },
+  "weights_used": {
+   "cost": 0.7,
+   "carbon": 0.3,
+   "lateness": 0.0
+  },
+  "normalization_scales": {
+   "cost": 501550.62334999995,
+   "carbon": 1613.5343999999998,
+   "lateness": 14125.0
+  },
+  "validator": {
+   "applicable": true,
+   "valid": true,
+   "capacity_ok": true,
+   "eligibility_ok": true,
+   "production_balance_ok": true,
+   "delivery_ok": true,
+   "violations": []
+  },
+  "recommendations": [
+   {
+    "action": "Review the proposed allocation.",
+    "rationale": "The independent checker verified capacity, eligibility, quantities and reported arithmetic.",
+    "evidence_refs": [
+     "inspect:optimizer:validator",
+     "config:6ede1e28b20cf57d1e7a"
+    ],
+    "confidence": "medium",
+    "estimated_impact": {
+     "kind": "plan_total",
+     "cost": 531087.83992,
+     "currency": "INR",
+     "carbon_t": 1.6135343999999998
+    },
+    "requires_approval": true
+   }
+  ],
+  "assumptions": [
+   "Duty and capacity_loss_pct are fractions: 0.30 means 30%, matching the existing loader.",
+   "One plant per order; all orders available at planning start; production may span days.",
+   "Shared plant capacity distributed equally across working days and rounded down.",
+   "Duty applies to production plus energy; transport uses calendar days.",
+   "Prices and weekly overrides are explicit configuration, not inferred from CSV.",
+   "Overlapping events use the largest active loss; early inventory has no holding cost.",
+   "Equal order priority; no execution/WIP state is supplied."
+  ],
+  "limitations": [
+   "Coarse daily production model; no setups, machine routing or inventory cost.",
+   "Feasibility is scoped to the configured finite horizon.",
+   "Normalization uses fixed candidate estimates, not a proven feasible reference optimum."
+  ],
+  "warnings": [
+   "Plant A shared capacity explicitly configured as 850 units/week; CSV row values=[850, 865].",
+   "Plant B shared capacity explicitly configured as 760 units/week; CSV row values=[760, 775].",
+   "Plant C shared capacity explicitly configured as 640 units/week; CSV row values=[640, 655]."
+  ],
+  "trace": [],
+  "problem_context": {}
+ },
+ "replan_revised": {
+  "schema_version": "vibhu-optimizer-1",
+  "dataset_version_id": "inspect",
+  "data_hash": "cf0639083b9fc5708bbd",
+  "config_version": "6ede1e28b20cf57d1e7a",
+  "scenario_hash": "2e89884e212c4d53d90e",
+  "planning_window": {
+   "start": "2026-01-01",
+   "end": "2026-04-23"
+  },
+  "solver": {
+   "status": "optimal",
+   "termination_reason": "optimality_proven",
+   "has_feasible_solution": true,
+   "optimality_proven": true,
+   "solve_seconds": 2.4974840839968238,
+   "best_bound": null,
+   "relative_gap": null,
+   "stage": "strict",
+   "stage_objective": 1.0412242566082335,
+   "pulp_status": "Optimal",
+   "pulp_solution_status": "Optimal Solution Found",
+   "log_summary": [
+    "Result - Optimal solution found",
+    "Objective value:                1.04122426",
+    "Enumerated nodes:               0",
+    "Time (Wallclock seconds):       0.89"
+   ],
+   "stability_status": "optimal",
+   "strict_solver_status": "optimal",
+   "objective_value": 1.0412242566082337
+  },
+  "answer_type": "scenario",
+  "alternative": false,
+  "original_request_met": true,
+  "allocation": [
+   {
+    "order_id": "ORD-0001",
+    "plant": "C",
+    "qty": 35,
+    "dispatch": "2026-01-19",
+    "arrival": "2026-01-23",
+    "on_time": true,
+    "late_days": 0,
+    "cost": 1674.232,
+    "carbon_kg": 3.794,
+    "cost_breakdown": {
+     "production": 770.0,
+     "energy": 215.6,
+     "transport": 595.0,
+     "duty": 93.632
+    },
+    "evidence_refs": [
+     "inspect:orders:ORD-0001",
+     "inspect:plants:C:P1",
+     "config:6ede1e28b20cf57d1e7a"
+    ]
+   },
+   {
+    "order_id": "ORD-0002",
+    "plant": "B",
+    "qty": 100,
+    "dispatch": "2026-01-12",
+    "arrival": "2026-01-16",
+    "on_time": true,
+    "late_days": 0,
+    "cost": 4676.254,
+    "carbon_kg": 27.26,
+    "cost_breakdown": {
+     "production": 1950.0,
+     "energy": 732.0,
+     "transport": 1600.0,
+     "duty": 394.25399999999996
+    },
+    "evidence_refs": [
+     "inspect:orders:ORD-0002",
+     "inspect:plants:B:P2",
+     "config:6ede1e28b20cf57d1e7a"
+    ]
+   },
+   {
+    "order_id": "ORD-0003",
+    "plant": "C",
+    "qty": 74,
+    "dispatch": "2026-01-14",
+    "arrival": "2026-01-20",
+    "on_time": true,
+    "late_days": 0,
+    "cost": 4319.39776,
+    "carbon_kg": 8.021600000000001,
+    "cost_breakdown": {
+     "production": 1628.0,
+     "energy": 455.84000000000003,
+     "transport": 1998.0,
+     "duty": 237.55776000000003
+    },
+    "evidence_refs": [
+     "inspect:orders:ORD-0003",
+     "inspect:plants:C:P3",
+     "config:6ede1e28b20cf57d1e7a"
+    ]
+   }
+  ],
+  "production_schedule": [],
+  "unassigned_orders": [],
+  "kpis": {
+   "total_cost": 531087.83992,
+   "currency": "INR",
+   "total_carbon_t": 1.6135343999999996,
+   "late_orders": 0,
+   "total_lateness_days": 0,
+   "unassigned_orders": 0,
+   "unassigned_units": 0,
+   "fulfilled_units": 10677,
+   "plant_utilisation": {
+    "A": 0.0,
+    "B": 0.23898830006882313,
+    "C": 0.7911658653846154
+   },
+   "plant_utilisation_by_week": []
+  },
+  "weights_used": {
+   "cost": 0.7,
+   "carbon": 0.3,
+   "lateness": 0.0
+  },
+  "normalization_scales": {
+   "cost": 501550.62334999995,
+   "carbon": 1613.5343999999998,
+   "lateness": 14125.0
+  },
+  "validator": {
+   "applicable": true,
+   "valid": true,
+   "capacity_ok": true,
+   "eligibility_ok": true,
+   "production_balance_ok": true,
+   "delivery_ok": true,
+   "violations": []
+  },
+  "recommendations": [
+   {
+    "action": "Review the proposed allocation.",
+    "rationale": "The independent checker verified capacity, eligibility, quantities and reported arithmetic.",
+    "evidence_refs": [
+     "inspect:optimizer:validator",
+     "config:6ede1e28b20cf57d1e7a"
+    ],
+    "confidence": "medium",
+    "estimated_impact": {
+     "kind": "plan_total",
+     "cost": 531087.83992,
+     "currency": "INR",
+     "carbon_t": 1.6135343999999996
+    },
+    "requires_approval": true
+   }
+  ],
+  "assumptions": [
+   "Duty and capacity_loss_pct are fractions: 0.30 means 30%, matching the existing loader.",
+   "One plant per order; all orders available at planning start; production may span days.",
+   "Shared plant capacity distributed equally across working days and rounded down.",
+   "Duty applies to production plus energy; transport uses calendar days.",
+   "Prices and weekly overrides are explicit configuration, not inferred from CSV.",
+   "Overlapping events use the largest active loss; early inventory has no holding cost.",
+   "Equal order priority; no execution/WIP state is supplied."
+  ],
+  "limitations": [
+   "Coarse daily production model; no setups, machine routing or inventory cost.",
+   "Feasibility is scoped to the configured finite horizon.",
+   "Normalization uses fixed candidate estimates, not a proven feasible reference optimum."
+  ],
+  "warnings": [
+   "Plant A shared capacity explicitly configured as 850 units/week; CSV row values=[850, 865].",
+   "Plant B shared capacity explicitly configured as 760 units/week; CSV row values=[760, 775].",
+   "Plant C shared capacity explicitly configured as 640 units/week; CSV row values=[640, 655]."
+  ],
+  "trace": [],
+  "problem_context": {}
+ },
+ "replan_comparison": {
+  "available": true,
+  "sign_convention": "revised minus baseline",
+  "currency": "INR",
+  "delta": {
+   "total_cost": 0.0,
+   "total_carbon_t": -2.220446049250313e-16,
+   "late_orders": 0,
+   "total_lateness_days": 0,
+   "unassigned_orders": 0,
+   "unassigned_units": 0,
+   "fulfilled_units": 0
+  },
+  "percentage_delta": {
+   "total_cost": 0.0,
+   "total_carbon_t": -1.3761380291925064e-14
+  },
+  "comparable_fulfillment": true,
+  "interpretation": "Same assigned workload.",
+  "matched_order_count": 125,
+  "matched_order_delta": {
+   "cost": -4.547473508864641e-13,
+   "carbon_kg": -1.8207657603852567e-14
+  },
+  "plant_assignment_changes": 0,
+  "dispatch_changes": 0,
+  "changes": [],
+  "production_bucket_changes": 355,
+  "production_changes": [],
+  "plant_utilisation_by_week": {}
+ },
+ "replan_events": [
+  {
+   "event_id": "WHATIF-B-30",
+   "plant": "B",
+   "from_date": "2026-01-12",
+   "to_date": "2026-01-25",
+   "capacity_loss_pct": 0.3
+  }
+ ],
+ "explain": {
+  "order_id": "ORD-0001",
+  "chosen": {
+   "order_id": "ORD-0001",
+   "plant": "C",
+   "qty": 35,
+   "dispatch": "2026-01-19",
+   "arrival": "2026-01-23",
+   "on_time": true,
+   "late_days": 0,
+   "cost": 1674.232,
+   "carbon_kg": 3.794,
+   "cost_breakdown": {
+    "production": 770.0,
+    "energy": 215.6,
+    "transport": 595.0,
+    "duty": 93.632
+   },
+   "evidence_refs": [
+    "inspect:orders:ORD-0001",
+    "inspect:plants:C:P1",
+    "config:6ede1e28b20cf57d1e7a"
+   ]
+  },
+  "candidates": [
+   {
+    "plant": "A",
+    "status": "candidate_in_isolation",
+    "standalone_estimate": {
+     "cost": 1467.375,
+     "carbon_kg": 14.227500000000001,
+     "cost_breakdown": {
+      "production": 595.0,
+      "energy": 406.0,
+      "transport": 341.25,
+      "duty": 125.125
+     }
+    },
+    "caveat": "This estimate ignores competition with other orders; it is not a global feasibility claim."
+   },
+   {
+    "plant": "B",
+    "status": "ineligible",
+    "reason": "Product not supported"
+   },
+   {
+    "plant": "C",
+    "status": "candidate_in_isolation",
+    "standalone_estimate": {
+     "cost": 1674.232,
+     "carbon_kg": 3.794,
+     "cost_breakdown": {
+      "production": 770.0,
+      "energy": 215.6,
+      "transport": 595.0,
+      "duty": 93.632
+     }
+    },
+    "caveat": "This estimate ignores competition with other orders; it is not a global feasibility claim."
+   }
+  ],
+  "evidence_refs": [
+   "inspect:orders:ORD-0001",
+   "config:6ede1e28b20cf57d1e7a"
+  ],
+  "limitations": [
+   "A plant being full in one plan alone does not prove reallocation impossible.",
+   "Counterfactual solves enforce all orders on time; a diagnostic baseline is not directly comparable."
+  ]
+ },
+ "carbon10": {
+  "schema_version": "vibhu-optimizer-1",
+  "dataset_version_id": "inspect",
+  "data_hash": "cf0639083b9fc5708bbd",
+  "config_version": "6ede1e28b20cf57d1e7a",
+  "scenario_hash": "d437d253872cf9ce1d82",
+  "planning_window": {
+   "start": "2026-01-01",
+   "end": "2026-04-23"
+  },
+  "solver": {
+   "status": "infeasible",
+   "termination_reason": "infeasibility_proven",
+   "has_feasible_solution": false,
+   "optimality_proven": false,
+   "solve_seconds": 1.0291740430002392,
+   "best_bound": null,
+   "relative_gap": null,
+   "stage": "strict",
+   "stage_objective": null,
+   "pulp_status": "Infeasible",
+   "pulp_solution_status": "No Solution Exists",
+   "log_summary": []
+  },
+  "answer_type": "infeasible",
+  "alternative": false,
+  "original_request_met": false,
+  "allocation": [],
+  "production_schedule": [],
+  "unassigned_orders": [],
+  "kpis": null,
+  "weights_used": {
+   "cost": 1.0,
+   "carbon": 0.0,
+   "lateness": 0.0
+  },
+  "normalization_scales": {
+   "cost": 501550.62334999995,
+   "carbon": 1613.5343999999998,
+   "lateness": 14125.0
+  },
+  "validator": {
+   "applicable": false
+  },
+  "recommendations": [],
+  "assumptions": [
+   "Duty and capacity_loss_pct are fractions: 0.30 means 30%, matching the existing loader.",
+   "One plant per order; all orders available at planning start; production may span days.",
+   "Shared plant capacity distributed equally across working days and rounded down.",
+   "Duty applies to production plus energy; transport uses calendar days.",
+   "Prices and weekly overrides are explicit configuration, not inferred from CSV.",
+   "Overlapping events use the largest active loss; early inventory has no holding cost.",
+   "Equal order priority; no execution/WIP state is supplied."
+  ],
+  "limitations": [
+   "Coarse daily production model; no setups, machine routing or inventory cost.",
+   "Feasibility is scoped to the configured finite horizon.",
+   "Normalization uses fixed candidate estimates, not a proven feasible reference optimum."
+  ],
+  "warnings": [
+   "Plant A shared capacity explicitly configured as 850 units/week; CSV row values=[850, 865].",
+   "Plant B shared capacity explicitly configured as 760 units/week; CSV row values=[760, 775].",
+   "Plant C shared capacity explicitly configured as 640 units/week; CSV row values=[640, 655]."
+  ],
+  "trace": [],
+  "problem_context": {
+   "carbon_target": {
+    "baseline_carbon_kg": 1613.5343999999998,
+    "requested_cut_pct": 10,
+    "carbon_cap_kg": 1452.18096,
+    "actual_cut_pct": null
+   }
+  }
+ },
+ "infeasible_sample": {
+  "schema_version": "vibhu-optimizer-1",
+  "dataset_version_id": "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67",
+  "data_hash": "cf0639083b9fc5708bbd",
+  "config_version": "6ede1e28b20cf57d1e7a",
+  "scenario_hash": "52ee1590d8a17a4c2865",
+  "planning_window": {
+   "start": "2026-01-01",
+   "end": "2026-04-23"
+  },
+  "solver": {
+   "status": "optimal",
+   "termination_reason": "optimality_proven",
+   "has_feasible_solution": true,
+   "optimality_proven": true,
+   "solve_seconds": 0.17809766600021248,
+   "best_bound": null,
+   "relative_gap": null,
+   "stage": "weighted_alternative",
+   "stage_objective": 0.0,
+   "pulp_status": "Optimal",
+   "pulp_solution_status": "Optimal Solution Found",
+   "log_summary": [
+    "Result - Optimal solution found",
+    "Objective value:                0.00000000",
+    "Enumerated nodes:               0",
+    "Time (Wallclock seconds):       0.00"
+   ],
+   "strict_solver_status": "infeasible",
+   "alternative_solver_status": "optimal",
+   "optimization_scope": "diagnostic_alternative",
+   "objective_value": 0.0
+  },
+  "answer_type": "infeasible",
+  "alternative": true,
+  "original_request_met": false,
+  "allocation": [],
+  "production_schedule": [],
+  "unassigned_orders": [
+   {
+    "order_id": "ORD-0001",
+    "qty": 35,
+    "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+    "scope": "configured production horizon"
+   },
+   {
+    "order_id": "ORD-0002",
+    "qty": 100,
+    "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+    "scope": "configured production horizon"
+   },
+   {
+    "order_id": "ORD-0003",
+    "qty": 74,
+    "reason_code": "UNASSIGNED_IN_BEST_FOUND_ALTERNATIVE",
+    "scope": "configured production horizon"
+   }
+  ],
+  "kpis": {
+   "total_cost": 0,
+   "currency": "INR",
+   "total_carbon_t": 0.0,
+   "late_orders": 0,
+   "total_lateness_days": 0,
+   "unassigned_orders": 125,
+   "unassigned_units": 10677,
+   "fulfilled_units": 0,
+   "plant_utilisation": {
+    "A": null,
+    "B": null,
+    "C": null
+   },
+   "plant_utilisation_by_week": []
+  },
+  "weights_used": {
+   "cost": 0.7,
+   "carbon": 0.3,
+   "lateness": 0.0
+  },
+  "normalization_scales": {
+   "cost": 501550.62334999995,
+   "carbon": 1613.5343999999998,
+   "lateness": 14125.0
+  },
+  "validator": {
+   "applicable": true,
+   "valid": true,
+   "capacity_ok": true,
+   "eligibility_ok": true,
+   "production_balance_ok": true,
+   "delivery_ok": false,
+   "violations": []
+  },
+  "recommendations": [
+   {
+    "action": "Review unmet commitments and the closest computed alternative.",
+    "rationale": "The independent checker verified capacity, eligibility, quantities and reported arithmetic.",
+    "evidence_refs": [
+     "cw-8ef21d03-f89f-46aa-8bc6-5966f3607e67:optimizer:validator",
+     "config:6ede1e28b20cf57d1e7a"
+    ],
+    "confidence": "medium",
+    "estimated_impact": {
+     "kind": "plan_total",
+     "cost": 0,
+     "currency": "INR",
+     "carbon_t": 0.0
+    },
+    "requires_approval": true
+   }
+  ],
+  "assumptions": [
+   "Duty and capacity_loss_pct are fractions: 0.30 means 30%, matching the existing loader.",
+   "One plant per order; all orders available at planning start; production may span days.",
+   "Shared plant capacity distributed equally across working days and rounded down.",
+   "Duty applies to production plus energy; transport uses calendar days.",
+   "Prices and weekly overrides are explicit configuration, not inferred from CSV.",
+   "Overlapping events use the largest active loss; early inventory has no holding cost.",
+   "Equal order priority; no execution/WIP state is supplied."
+  ],
+  "limitations": [
+   "Coarse daily production model; no setups, machine routing or inventory cost.",
+   "Feasibility is scoped to the configured finite horizon.",
+   "Normalization uses fixed candidate estimates, not a proven feasible reference optimum."
+  ],
+  "warnings": [
+   "Plant A shared capacity explicitly configured as 850 units/week; CSV row values=[850, 865].",
+   "Plant B shared capacity explicitly configured as 760 units/week; CSV row values=[760, 775].",
+   "Plant C shared capacity explicitly configured as 640 units/week; CSV row values=[640, 655]."
+  ],
+  "trace": [],
+  "problem_context": {}
+ }
+}

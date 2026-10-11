@@ -1,0 +1,27 @@
+# CarbonWise Allocator - full application (API + workflow + UI + optimizer + data module).
+# Ranges, not exact pins, so the same file installs on Python 3.10-3.13.
+# Verified 11 Oct 2026 on Python 3.10 (macOS VM) and 3.13 (Linux).
+# Vibhu's carbonwise-data/requirements-optimizer.txt is unchanged; note it pins
+# numpy==2.3.5, which needs Python >= 3.11.
+
+# Data module + optimizer
+pandas>=2.2,<3
+numpy>=1.26,<2.4
+pydantic>=2.7,<3
+PuLP>=3.0,<4          # bundles the CBC solver
+PyYAML>=6.0
+
+# LangGraph workflow + FastAPI backend
+langgraph>=1.0,<2
+fastapi>=0.115
+uvicorn>=0.30
+python-multipart>=0.0.9   # required by FastAPI for file uploads (/ingest)
+
+# Streamlit dashboard
+streamlit>=1.40
+plotly>=5.24
+requests>=2.31
+
+# Tests
+pytest>=8.0
+httpx>=0.27               # used by FastAPI's TestClient

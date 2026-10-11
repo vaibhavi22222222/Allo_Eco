@@ -1,0 +1,10 @@
+# Tested optimizer additions; retain the teammate's data dependencies.
+-r requirements.txt
+pandas==2.2.3
+numpy==2.3.5
+PuLP==3.3.0
+pydantic==2.12.3
+PyYAML==6.0.3
+pytest==8.4.2
+ruff==0.14.4
+

@@ -1,0 +1,24 @@
+# Explicit synthetic assumptions for the existing teammate dataset.
+# WARNING: percentages in these CSVs/SQLite are FRACTIONS (0.30 = 30%).
+planning_start: "2026-01-01"
+horizon_days: 113
+currency: INR
+production_weekdays: [0, 1, 2, 3, 4]
+percentage_convention: fraction_0_1
+# These prices are synthetic assumptions absent from the fixed CSV schema.
+energy_price_per_kwh:
+  A: 8.0
+  B: 6.0
+  C: 7.0
+# CSV product rows disagree (850/865, 760/775, 640/655).
+# Conservative shared plant budgets explicitly choose the smaller value.
+# These are proposed demo assumptions; confirm with team/organizers.
+plant_weekly_capacity:
+  A: 850
+  B: 760
+  C: 640
+duty_basis: production_plus_energy
+overlap_policy: maximum_active_loss
+weekly_carbon_overrides: []
+weekly_energy_price_overrides: []
+

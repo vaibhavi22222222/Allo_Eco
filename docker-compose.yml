@@ -1,0 +1,46 @@
+# Start everything:   docker compose up --build
+# API:  http://localhost:8000  (docs at /docs)     UI:  http://localhost:8501
+services:
+  api:
+    build: .
+    image: carbonwise-allocator:latest
+    command: ["python", "-m", "uvicorn", "app.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env          # optional; copy from .env.example
+        required: false
+    environment:
+      CARBONWISE_DB_PATH: /data/carbonwise.sqlite3
+      MOCK_LLM: ${MOCK_LLM:-true}
+      LLM_PROVIDER: ${LLM_PROVIDER:-ollama}
+      LLM_MODEL: ${LLM_MODEL:-qwen2.5:7b-instruct}
+      # Ollama runs on the host machine (allowed by the guide), not in Docker.
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # makes the host reachable on Linux too
+    volumes:
+      - carbonwise-db:/data                   # SQLite survives restarts
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+      start_period: 20s
+
+  ui:
+    build: .                                  # same image as api (cached, built once)
+    image: carbonwise-allocator:latest
+    command: ["python", "-m", "streamlit", "run", "ui/app.py",
+              "--server.address", "0.0.0.0", "--server.port", "8501",
+              "--server.headless", "true", "--browser.gatherUsageStats", "false"]
+    ports:
+      - "8501:8501"
+    environment:
+      CARBONWISE_API_URL: http://api:8000      # service name inside the compose network
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  carbonwise-db:

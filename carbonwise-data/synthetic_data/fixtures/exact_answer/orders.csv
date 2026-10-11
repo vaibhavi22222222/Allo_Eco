@@ -1,0 +1,5 @@
+order_id,product,qty,destination,due
+EX-01,P1,40,D1,2026-01-15
+EX-02,P2,50,D2,2026-01-16
+EX-03,P1,60,D3,2026-01-17
+EX-04,P3,30,D2,2026-01-18

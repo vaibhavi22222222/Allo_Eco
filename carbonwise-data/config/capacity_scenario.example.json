@@ -1,0 +1,10 @@
+[
+  {
+    "event_id": "WHATIF-B-30",
+    "plant": "B",
+    "from_date": "2026-01-12",
+    "to_date": "2026-01-25",
+    "capacity_loss_pct": 0.30
+  }
+]
+

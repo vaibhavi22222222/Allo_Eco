@@ -1,0 +1,9 @@
+# Small synthetic planning config for application tests (not demo data).
+planning_start: "2026-01-05"
+horizon_days: 14
+currency: INR
+production_weekdays: [0, 1, 2, 3, 4]
+percentage_convention: fraction_0_1
+energy_price_per_kwh: {A: 8.0, B: 6.0, C: 7.0}
+duty_basis: production_plus_energy
+overlap_policy: maximum_active_loss

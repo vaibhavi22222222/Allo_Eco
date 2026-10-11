@@ -1,0 +1,66 @@
+{
+  "seed": 42,
+  "schema_valid": true,
+  "referential_integrity": {
+    "all_products_eligible": true,
+    "all_events_reference_valid_plants": true,
+    "missing_transport_rows": [],
+    "valid": true
+  },
+  "business_scenarios": {
+    "three_plants": true,
+    "at_least_eight_destinations": true,
+    "at_least_one_single_plant_product": true,
+    "cheapest_late_case_present": true,
+    "duty_shift_case_present": true,
+    "capacity_loss_event_present": true,
+    "single_plant_products": [
+      "P6",
+      "P7"
+    ],
+    "valid": true
+  },
+  "scenario_rows": [
+    {
+      "order_id": "SCN-001",
+      "product": "P2",
+      "qty": 120,
+      "destination": "D7",
+      "due": "2026-01-18",
+      "notes": "Scenario: SCN-001"
+    },
+    {
+      "order_id": "SCN-002",
+      "product": "P7",
+      "qty": 90,
+      "destination": "D3",
+      "due": "2026-02-03",
+      "notes": "Scenario: SCN-002"
+    },
+    {
+      "order_id": "SCN-003",
+      "product": "P5",
+      "qty": 55,
+      "destination": "D10",
+      "due": "2026-01-30",
+      "notes": "Scenario: SCN-003"
+    },
+    {
+      "order_id": "SCN-004",
+      "product": "P4",
+      "qty": 70,
+      "destination": "D4",
+      "due": "2026-01-11",
+      "notes": "Scenario: SCN-004"
+    },
+    {
+      "order_id": "SCN-IMP-001",
+      "product": "P6",
+      "qty": 200,
+      "destination": "D10",
+      "due": "2026-01-08",
+      "notes": "No plant can reach the due date."
+    }
+  ],
+  "valid": true
+}
