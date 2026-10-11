@@ -1,0 +1,10 @@
+plant,destination,transport_cost_per_unit,transit_days,duty_pct,carbon_kg_per_unit
+A,D1,2.0,3,0.05,0.04
+A,D2,3.0,4,0.08,0.055
+B,D1,2.5,5,0.07,0.05
+B,D2,2.8,4,0.06,0.052
+C,D1,5.0,6,0.09,0.03
+C,D2,4.0,5,0.08,0.03
+A,D3,4.0,4,0.05,0.05
+B,D3,4.5,5,0.06,0.06
+C,D3,6.0,7,0.07,0.04

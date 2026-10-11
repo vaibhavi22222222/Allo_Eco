@@ -1,0 +1,4 @@
+order_id,product,qty,destination,due
+CL-001,P2,80,D7,2026-01-18
+CL-002,P3,30,D4,2026-01-16
+CL-003,P1,50,D5,2026-01-20
